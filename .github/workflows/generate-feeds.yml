@@ -38,7 +38,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd linkfeed
           uv venv
           source .venv/bin/activate
           uv pip install -e .
@@ -47,7 +46,6 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          cd linkfeed
           source .venv/bin/activate
           
           # Check if multi-feed config exists
@@ -64,7 +62,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: linkfeed/feeds
+          path: feeds
 
   deploy:
     environment:
