@@ -1,0 +1,14 @@
+[tools]
+python = "3.12"
+uv = "latest"
+
+[env]
+VIRTUAL_ENV = ".venv"
+
+[tasks]
+install = "uv pip install -e ."
+dev = "uv pip install -e '.[dev]'"
+test = "python -m pytest tests/ -v"
+lint = "python -m ruff check ."
+format = "python -m ruff format ."
+build = "uv build"

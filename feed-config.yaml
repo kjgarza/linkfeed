@@ -1,0 +1,30 @@
+
+  # Example multi-feed configuration for linkfeed
+# Use with: linkfeed --config feeds.yaml --multi --generate-site
+
+# Global blacklist applied to all feeds
+global_blacklist:
+  - "*.tracking.com"
+  - "ads.example.com"
+  - ".github.com/digital-science"
+  - "*.jira.com"
+  - "https://news.ycombinator.com/*"
+
+feeds:
+
+  # Feed from static sources
+  - name: toreadlater
+    feed:
+      title: "Kristian's Link Feed"
+      home_page_url: "https://kjgarza.github.io/linkfeed/"
+      feed_url: "https://kjgarza.github.io/linkfeed/feed.json"
+      description: "Links I find interesting"
+    markdown_dir: "./../../notes/scratchpad/ReadItLater"
+
+
+  - name: anthropic-engineering
+    feed:
+      title: "Anthropic Engineering"
+      description: "Anthropic's engineering blog"
+      home_page_url: "https://www.anthropic.com/engineering"
+    website: "https://www.anthropic.com/engineering"

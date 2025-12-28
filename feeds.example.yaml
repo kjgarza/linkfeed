@@ -1,0 +1,37 @@
+# Example multi-feed configuration for linkfeed
+# Use with: linkfeed --config feeds.yaml --multi --generate-site
+
+# Global blacklist applied to all feeds
+global_blacklist:
+  - "*.tracking.com"
+  - "ads.example.com"
+
+feeds:
+  # Feed from website scraping
+  - name: tech-news
+    feed:
+      title: "Tech News"
+      description: "Latest technology articles"
+      home_page_url: "https://example.com/tech"
+      language: "en"
+    website: "https://news.ycombinator.com"
+    blacklist:
+      - "*.reddit.com"
+
+  # Feed from static sources
+  - name: bookmarks
+    feed:
+      title: "My Bookmarks"
+      description: "Curated links collection"
+    sources:
+      - "https://example.com/article1"
+      - "https://example.com/article2"
+
+  # Feed with custom output directory
+  - name: research
+    output_dir: "academic/research"
+    feed:
+      title: "Research Papers"
+      description: "Academic papers and publications"
+    sources:
+      - "https://arxiv.org/abs/example"

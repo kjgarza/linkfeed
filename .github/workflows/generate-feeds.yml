@@ -1,0 +1,78 @@
+name: Generate Feeds
+
+on:
+  schedule:
+    # Run daily at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      generate_tags:
+        description: 'Generate tags using OpenAI'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Install dependencies
+        run: |
+          cd linkfeed
+          uv venv
+          source .venv/bin/activate
+          uv pip install -e .
+
+      - name: Generate feeds
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          cd linkfeed
+          source .venv/bin/activate
+          
+          # Check if multi-feed config exists
+          if [ -f "claude-feed.yaml" ]; then
+            TAGS_FLAG=""
+            if [ "${{ inputs.generate_tags }}" = "true" ] && [ -n "$OPENAI_API_KEY" ]; then
+              TAGS_FLAG="--generate-tags"
+            fi
+            linkfeed --config claude-feed.yaml --multi -g --generate-site $TAGS_FLAG
+          else
+            echo "No claude-feed.yaml found, skipping feed generation"
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: linkfeed/feeds
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

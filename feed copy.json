@@ -1,0 +1,1927 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Kristian's Link Feed",
+  "home_page_url": "https://kjgarza.github.io/linkfeed/",
+  "feed_url": "https://kjgarza.github.io/linkfeed/feed.json",
+  "description": "Links I find interesting",
+  "items": [
+    {
+      "id": "0697d50840a8a34d",
+      "url": "https://www.tiktok.com/@agentic.james/video/7587631484937325879?_r=1&_t=ZG-92W3hAV8haD",
+      "title": "TikTok - Make Your Day",
+      "language": "en"
+    },
+    {
+      "id": "0697d50840a8a34d",
+      "url": "https://www.tiktok.com/@agentic.james/video/7587631484937325879?_r=1&_t=ZG-92W3hAV8haD",
+      "title": "TikTok - Make Your Day",
+      "language": "en"
+    },
+    {
+      "id": "affca018a13fb3f3",
+      "url": "https://developers.google.com/apps-script/guides/services/quotas",
+      "title": "Quotas for Google Services  |  Apps Script  |  Google for Developers",
+      "summary": "Review the daily quotas and limitations for Google services within Apps Script to ensure your scripts run without interruption.",
+      "language": "en"
+    },
+    {
+      "id": "ca49f4ce5ba1a87f",
+      "url": "https://www.youtube.com/watch?v=F_hBZCShRyk&list=PL1ULeCgpH_H-rympIwM45hJ-vJStDTZ6G",
+      "title": "Docs to Slides import",
+      "summary": "https://gsuite.google.com/marketplace/app/slides_toolbox/994552357682Lets you to cut the clicks on repeated tasks and brings features for organizing and unif...",
+      "authors": [
+        {
+          "name": "Workspace Add-ons Support"
+        }
+      ],
+      "tags": [
+        "video",
+        "youtube"
+      ],
+      "attachments": [
+        {
+          "url": "https://i.ytimg.com/vi/F_hBZCShRyk/maxresdefault.jpg",
+          "mime_type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "d055358ef265d846",
+      "url": "https://workspace.google.com/marketplace/app/slides_toolbox/994552357682",
+      "title": "Slides Toolbox - Google Workspace Marketplace",
+      "summary": "Lets you to cut the clicks on repeated  tasks and brings features for organizing and unifying data in Google Slides™.",
+      "language": "en-US"
+    },
+    {
+      "id": "611c1a4168fbc661",
+      "url": "https://tilde.club/",
+      "title": "Welcome to ~tilde.club~",
+      "summary": "Questions? See the official FAQ.",
+      "language": "en"
+    },
+    {
+      "id": "91f324ff6eeab4d1",
+      "url": "https://nips.nostr.com/13",
+      "title": "NIP13 - NIP-13 - Proof of Work",
+      "summary": "Read more about the NIP13 on {{appUrl}} - NIP-13 - Proof of Work",
+      "language": "en"
+    },
+    {
+      "id": "f5907f9af99e1377",
+      "url": "https://bitchat.free/",
+      "title": "bitchat",
+      "summary": "bitchat is a decentralized peer-to-peer messaging application that operates over bluetooth mesh networks.\nno internet required, no servers, no phone numbers."
+    },
+    {
+      "id": "c981494d36d29308",
+      "url": "https://github.com/dewey/kirby-posse/pull/9",
+      "title": "Add Nostr support by dewey · Pull Request #9 · dewey/kirby-posse",
+      "summary": "We read every piece of feedback, and take your input very seriously.",
+      "language": "en"
+    },
+    {
+      "id": "a7b0501f1e422d64",
+      "url": "https://securitycryptographywhatever.com/",
+      "title": "Security Cryptography Whatever",
+      "language": "en"
+    },
+    {
+      "id": "59b453683c0e9af6",
+      "url": "https://tilde.town/",
+      "title": "tilde.town",
+      "summary": "if you think you might enjoy being a part of this community you canlearn more here."
+    },
+    {
+      "id": "be0d5b776bb480e6",
+      "url": "https://primal.net/",
+      "title": "Primal",
+      "summary": "Live Free",
+      "language": "en"
+    },
+    {
+      "id": "c46b54cff5f6c473",
+      "url": "https://en.wikipedia.org/wiki/Idiot",
+      "title": "Idiot - Wikipedia",
+      "language": "en"
+    },
+    {
+      "id": "3ec55a2a7d8aaba2",
+      "url": "https://en.wikipedia.org/wiki/Hyphanet",
+      "title": "Hyphanet - Wikipedia",
+      "language": "en"
+    },
+    {
+      "id": "b0f16a07cae4641b",
+      "url": "https://oxism.com/trystero/",
+      "title": "Trystero - serverless WebRTC matchmaking",
+      "summary": "Serverless WebRTC matchmaking for painless P2P",
+      "authors": [
+        {
+          "name": "Dan Motzenbecker"
+        }
+      ],
+      "language": "en"
+    },
+    {
+      "id": "e1614e342fc97487",
+      "url": "https://sdf.org/",
+      "title": "SDF Public Access UNIX System - Free Shell Account and Shell Access",
+      "summary": "[ donations appreciated ]"
+    },
+    {
+      "id": "7afe8a94fec43140",
+      "url": "https://github.com/damus-io/nostrdb",
+      "title": "GitHub - damus-io/nostrdb: The unfairly fast embedded nostr database backed by lmdb",
+      "summary": "The unfairly fast embedded nostr database backed by lmdb - damus-io/nostrdb",
+      "language": "en"
+    },
+    {
+      "id": "529c07734d087c02",
+      "url": "https://zapstore.dev/",
+      "title": "Zapstore",
+      "summary": "Discover apps through your connections – no walled gardens, no shady\n\t\t\t\t\talgorithms. Built on open protocols and fully decentralized.",
+      "language": "en"
+    },
+    {
+      "id": "80a38a9bfb14e232",
+      "url": "https://eprint.iacr.org/2025/1459.pdf",
+      "title": "1459.pdf",
+      "tags": [
+        "pdf"
+      ],
+      "attachments": [
+        {
+          "url": "https://eprint.iacr.org/2025/1459.pdf",
+          "mime_type": "application/pdf",
+          "size_in_bytes": 879958
+        }
+      ]
+    },
+    {
+      "id": "f853624a23423b63",
+      "url": "https://yakihonne.com/",
+      "title": "Home",
+      "summary": "A censorship and data ownership free protocol, you'll enjoy a fully decentralized media experience."
+    },
+    {
+      "id": "10dd7b536be69f43",
+      "url": "https://flak.tedunangst.com/search?q=activitypub",
+      "title": "flak",
+      "summary": "It’s been one year sinceour previous adventure, so it’s time for another round of guess why that dependency shows up in the tarball. This time we’re looking athonk, an ActivityPub server that’s supposed to be idiosyncratic with minimal dependencies, so you can keep all your attention focused where it’s needed.more...",
+      "language": "en-US"
+    },
+    {
+      "id": "5d09f0d89329cca5",
+      "url": "https://hellonostr.dev/en/introduction/",
+      "title": "Introduction to Nostr Development",
+      "summary": "Learn about Nostr key formats and how to sign messages.",
+      "language": "en"
+    },
+    {
+      "id": "e41cf40cd0af1598",
+      "url": "https://asknostr.site/question/note1lhvk3kkmaev6qzlpzzns69vwgdh4s0vh48scux9h4flnv5ztd0ks9484a8",
+      "title": "#asknostr among the problems that Nostr faces, the child porn pro",
+      "summary": "#asknostr among the problems that Nostr faces, the child porn problem is a very, very, very bad problem. \n\nA VERY bad problem.\n\nWhat is the current thinking  among developers about how to deal with this? \n\nNobody likes censorship, but the o",
+      "language": "en"
+    },
+    {
+      "id": "e85a40b86f1a3c60",
+      "url": "https://asknostr.site/",
+      "title": "#asknostr - Q&A site powered by Nostr",
+      "summary": "This website is a Q&A community on top of Nostr. The purpose of the site is showcase the power of a decentralized social network protocol and allow easy content discovery.",
+      "language": "en"
+    },
+    {
+      "id": "1bb32a95442bed6b",
+      "url": "https://soatok.blog/2024/08/14/security-issues-in-matrixs-olm-library/",
+      "title": "Security Issues in Matrix’s Olm Library - Dhole Moments",
+      "summary": "I don’t consider myself exceptional in any regard, but I stumbled upon a few cryptography vulnerabilities in Matrix’s Olm library with so little effort that it was nearly accidental. It…",
+      "language": "en-US"
+    },
+    {
+      "id": "18067fa46a704c85",
+      "url": "https://nbviewer.org/github/datacite/pidgraph-notebooks-python/blob/master/dmp/user-story-single-dmp-connections.ipynb",
+      "title": "Jupyter Notebook Viewer",
+      "summary": "Data management plans (DMPs) are documents accompanying research proposals and project outputs. DMPs are created as textual narratives and describe the data and tools employed in scientific investigations.They are sometimes seen as an administrative exercise and not as an integral part of research practice. Machine Actionable DMPs (maDMPs) take the DMP concept further by using PIDs and PIDs services to connect all resources associated with a DMP.",
+      "language": "en"
+    },
+    {
+      "id": "4c24293e67a43402",
+      "url": "https://datacite.org/blog/announcing-dmp-ids/",
+      "title": "A Brave New PID: DMP-IDs - DataCite",
+      "summary": "Despite the challenges over the last year, we are pleased to share some exciting news about launching the brave new PID, DMP IDs. Two years ago we set out a […]",
+      "authors": [
+        {
+          "name": "Kristian Garza"
+        }
+      ],
+      "language": "en"
+    },
+    {
+      "id": "897a62b1154325e3",
+      "url": "https://uc3.cdlib.org/",
+      "title": "UC3: California Digital Library – University of California Curation Center (UC3)",
+      "summary": "Enriching PID metadata through shared responsibility, openness, and trusted community curation.Learn more",
+      "language": "en-US"
+    },
+    {
+      "id": "b60fc83b6e2c7cc9",
+      "url": "https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard",
+      "title": "GitHub - RDA-DMP-Common/RDA-DMP-Common-Standard: Official outputs from the RDA DMP Common Standards WG",
+      "summary": "Official outputs from the RDA DMP Common Standards WG  - GitHub - RDA-DMP-Common/RDA-DMP-Common-Standard: Official outputs from the RDA DMP Common Standards WG",
+      "language": "en"
+    },
+    {
+      "id": "8195142ebc9e085b",
+      "url": "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=1745675&HistoricalAwards=false",
+      "title": "Award Details - NSF Award Search",
+      "summary": "Find award details and explore award abstracts and publications.",
+      "language": "en"
+    },
+    {
+      "id": "8dc59030c3279736",
+      "url": "https://dmptool.org/",
+      "title": "DMP Tool",
+      "language": "en"
+    },
+    {
+      "id": "886b1bab0679f1e2",
+      "url": "https://www.digitalapi.ai/blogs/how-to-make-your-apis-mcp-ready",
+      "title": "How to make your APIs MCP-ready",
+      "summary": "Make your APIs MCP-ready with proven best practices. Enhance compatibility, security, and scalability for modern integrations.",
+      "language": "en"
+    },
+    {
+      "id": "4dbdd912813058c2",
+      "url": "https://blymp.ai",
+      "title": "Blymp | Launching in Q4 '25",
+      "summary": "A new era in OOH is coming. We’re building tech that will redefine how brands engage in the real world. Stay tuned!",
+      "language": "en"
+    },
+    {
+      "id": "a1c5c765259d0d81",
+      "url": "https://serpentinegame.com/",
+      "title": "Play Boggle Online With Your Friends!",
+      "summary": "Play Boggle online with your friends!  Serpentine is a free multiplayer variant of the traditional Boggle game, where you pit your skills against dozens of players at a time!",
+      "language": "en"
+    },
+    {
+      "id": "08b5e6041fceab37",
+      "url": "https://www.spl.ing/",
+      "title": "Spling — Spell check entire websites",
+      "summary": "Spling proofreads your website and notifies you about typos and grammar issues. Join for free at www.spl.ing",
+      "language": "en"
+    },
+    {
+      "id": "e2a2ca61f05c1723",
+      "url": "https://github.com/ssherman/bookshop-search",
+      "title": "GitHub - ssherman/bookshop-search",
+      "summary": "Contribute to ssherman/bookshop-search development by creating an account on GitHub.",
+      "language": "en"
+    },
+    {
+      "id": "957668a5f914bbe8",
+      "url": "https://www.photovortex.com/",
+      "title": "PhotoVortex | AI Photo Generator & Editor",
+      "summary": "Generate and edit AI photos with PhotoVortex, your AI photographer and editor. Create professional headshots, YouTube thumbnails, and more.",
+      "language": "en"
+    },
+    {
+      "id": "c649a5204dd84b01",
+      "url": "https://gosinkit.com/",
+      "title": "Sink It - Upgrade your Reddit Web Experience",
+      "summary": "Sink Itis a freebrowser extensionto supercharge your Reddit\n                            experience with improved comments navigation, adaptive dark mode, easier upvoting, and more.\n                            It also removes theuse our appbanners, buttons, and ads. Yeah, we loathe them too!",
+      "language": "en"
+    },
+    {
+      "id": "85e30555c1ebca78",
+      "url": "https://guacosoft.com/attic/",
+      "title": "Home Inventory Software",
+      "summary": "Home inventory software for Windows, Linux and Mac (Windows 7 and 8 supported). Able to import database from Quicken Home Inventory."
+    },
+    {
+      "id": "468a02fe26c4d4c1",
+      "url": "https://wolftickets.ai/",
+      "title": "WolfTickets.AI: AI Powered UFC Fight Predictions | Betting Tips | In-depth Analysis of Fights",
+      "summary": "Discover expert UFC fight predictions, in-depth match analysis, and betting strategies driven by machine learning. WolfTickets.ai provides insightful write-ups, statistical visuals, and profitable betting recommendations to help you stay ahead of the game. Join us for data-driven fight insights and smart bets for every UFC event.",
+      "language": "en"
+    },
+    {
+      "id": "e1066ed53b481595",
+      "url": "https://everydaychengyu.com/",
+      "title": "Everyday 成語 – Ancient wisdom for modern life",
+      "summary": "Dive into the rich world of Chinese idioms, where each saying reveals a lesson for everyday life. Everyday 成語 helps you embrace these time-honored phrases to enrich your language and understanding Chinese culture.",
+      "language": "en-US"
+    },
+    {
+      "id": "1ac069e51257a0de",
+      "url": "https://tender.run/",
+      "title": "Tender | The inbox for your finances",
+      "summary": "Tender is an inbox-zero spending tracker app that's fast, simple, and secure.",
+      "language": "en-US"
+    },
+    {
+      "id": "43ef5e8f8c3d1278",
+      "url": "https://www.unlistedjobs.com/",
+      "title": "Jobs not listed anywhere else | UnlistedJobs",
+      "summary": "Access jobs not listed anywhere else. Find and apply to open positions found directly on company websites. No ghost jobs, paid employer ads or spam."
+    },
+    {
+      "id": "0db43cb046417750",
+      "url": "https://opencourser.com/",
+      "title": "OpenCourser: Learn skills that shape your future",
+      "summary": "Learn skills that shape your future. Browse thousands of online courses and books. Develop career skills, ace exams, and nurture your curiosity.",
+      "language": "en"
+    },
+    {
+      "id": "1f1658f9bbb6f85e",
+      "url": "https://portdroid.net/",
+      "title": "PortDroid",
+      "summary": "Your Networking Swiss-army Knife",
+      "authors": [
+        {
+          "name": "PortDroid"
+        }
+      ],
+      "language": "en-gb"
+    },
+    {
+      "id": "f558cda3b8a8eebb",
+      "url": "https://www.portrayya.com/",
+      "title": "Portrayya | Professional AI Portraits",
+      "summary": "Take professional portraits with Portryayya within minutes: 👨‍💼 Professional headshot for your resume 👩‍💼 Improve your LinkedIn photos",
+      "language": "en"
+    },
+    {
+      "id": "e34a1883ff145c69",
+      "url": "https://cluehound.com/",
+      "title": "Cluehound Mystery Magazines",
+      "language": "en"
+    },
+    {
+      "id": "05b80cf0185f8e34",
+      "url": "https://consent.youtube.com/ml?continue=https://www.youtube.com/@foxev-content?cbrd%3D1&gl=DE&hl=de&cm=2&pc=yt&src=1&escs=AYgdcTJ6EB3rWWfZ9303_3MdJRlKsJJwPhnogc7VzESCAl9I-JltTGb9LAk3rUD4UBexG0zpYXhDBIElyWO-KpfR0G1m5do85UlW",
+      "title": "Bevor Sie zu YouTube weitergehen",
+      "summary": "Wir verwendenCookiesund Daten, um",
+      "language": "de"
+    },
+    {
+      "id": "4dd723f789416314",
+      "url": "https://microsoftedge.microsoft.com/addons/detail/sink-it-for-reddit/hhpndpbbbmadgmpmjnnlnfoaiglhaghd",
+      "title": "Sink It for Reddit - Microsoft Edge Addons",
+      "summary": "Make Microsoft Edge your own with extensions that help you personalize the browser and be more productive.",
+      "language": "en-US"
+    },
+    {
+      "id": "299d1c3375c833eb",
+      "url": "https://web.archive.org/web/20170607100433/https://www.triposo.com/walter",
+      "title": "Walter - Where things are",
+      "summary": "The best way to explore a new city is to walk it. You wander around with just a general idea of where things are. If that's how you roll, Walter is the travel app for you!",
+      "language": "en"
+    },
+    {
+      "id": "a80b80f3e7f4c539",
+      "url": "https://audiala.com/",
+      "title": "Audiala: Your Pocket Tour Guide",
+      "summary": "Audiala is a mobile app that provides audio tours in any city of the world. Download the app today and start exploring!",
+      "language": "en"
+    },
+    {
+      "id": "a120f627a1a01d50",
+      "url": "https://www.budgetsheet.com/",
+      "title": "BudgetSheet - Import Bank Transactions Into Google Sheets",
+      "summary": "The Budgeting Spreadsheet With Live Banking Data. Google Sheets + Live Bank Transaction Imports. No more manual exports or copying and pasting from CSV files",
+      "language": "en_US"
+    },
+    {
+      "id": "bddef266daaeb740",
+      "url": "https://heliographe.studio/?ref=heliographe.net",
+      "title": "Héliographe Studio",
+      "summary": "Héliographe Studio",
+      "language": "en"
+    },
+    {
+      "id": "88be027e52fc834a",
+      "url": "https://labs.iximiuz.com/",
+      "title": "iximiuz Labs - Indie Learning Platform to Master Server Side Craft",
+      "summary": "Skill up in Linux, Networking, Containers, and Kubernetes by taking courses, following interactive tutorials, and solving fun DevOps challenges.",
+      "language": "en"
+    },
+    {
+      "id": "00e90c04e7b30b39",
+      "url": "https://produktly.com/",
+      "title": "Produktly - Software to make your software better",
+      "summary": "Product tours, checklists, roadmaps, and feedback widgets that help improve your product's adoption and retention. No coding skills needed!",
+      "language": "en"
+    },
+    {
+      "id": "dbbe2aafb02d7a4d",
+      "url": "https://forestfriends.tech/",
+      "title": "Forest Friends Zine",
+      "summary": "A guide for AI Engineers building the wild world of LLM system evals",
+      "language": "en"
+    },
+    {
+      "id": "60a447816ddd38fc",
+      "url": "https://muted.io/",
+      "title": "Magical Music Theory Tools to Learn Music Online for Free | muted.io",
+      "summary": "A collection of interactive online music theory tools and piano references for notes, keys, chords and scales. A fun way to learn and retain music concepts.",
+      "language": "en"
+    },
+    {
+      "id": "444749d017d1e98b",
+      "url": "https://studiozenkai.com/post/airbnb-the-good-the-bad-the-profitable/",
+      "title": "The Airbnb Reality Check · Software, photography, and sustainability articles by Heri",
+      "summary": "During the pandemic, with optimism running high, I bought a vacation property in the Laurentians. It was meant to serve two purposes: generate income through short-term rentals and create priceless family memories\nThe chalet (official website) has everything one could hope for: a picturesque waterfront location, a cozy log-cabin aesthetic, and modern amenities like a spa, 4K TV, and high-speed internet. For a time, the plan seemed flawless. The property generated $70k–$100k annually, covering th",
+      "language": "en-us"
+    },
+    {
+      "id": "e3a28ccfde0f94a6",
+      "url": "https://voicebraindump.com/",
+      "title": "Brain Dump | Voice Journal App — Transcribe to Markdown",
+      "summary": "Voice journaling app for iPhone with on-device transcription. Saves to Markdown in iCloud or your Obsidian vault. Works offline. No cloud upload, no lock-in.",
+      "language": "en"
+    },
+    {
+      "id": "ef6737312ca3630a",
+      "url": "https://store.steampowered.com/app/1486350/VRoid_Studio_v201/",
+      "title": "VRoid Studio v2.7.0 on Steam",
+      "summary": "VRoid Studio is a 3D character creation software developed for you to freely express yourself, even without 3D modeling expertise. The software is easy-to-use. Even first-time users can fully enjoy the software by picking preset items and playing around with the parameters’ sliders.",
+      "language": "en"
+    },
+    {
+      "id": "a11f8eb7c1c02579",
+      "url": "https://github.com/darthcloud/BlueRetro",
+      "title": "GitHub - darthcloud/BlueRetro: Multiplayer Bluetooth controllers adapter for retro video game consoles & computers",
+      "summary": "Multiplayer Bluetooth controllers adapter for retro video game consoles & computers - darthcloud/BlueRetro",
+      "language": "en"
+    },
+    {
+      "id": "b3810c8fcde55b55",
+      "url": "https://github.com/geonnave/roadcast",
+      "title": "GitHub - geonnave/roadcast: generate on-demand podcasts about one's surroundings",
+      "summary": "generate on-demand podcasts about one's surroundings - geonnave/roadcast",
+      "language": "en"
+    },
+    {
+      "id": "35e70732a5355104",
+      "url": "https://www.usedigest.com/",
+      "title": "Digest - Personalized Newsletter Digest",
+      "summary": "The newsletter platform for creating personalized newsletter digests from sources like YouTube, Instagram, TikTok, Twitter, RSS, Reddit, Weather, & more.",
+      "language": "en"
+    },
+    {
+      "id": "ae3d7c3bf6c52408",
+      "url": "https://www.explorehere.app/",
+      "title": "Your History Guide – ExploreHere App",
+      "summary": "Explore over 200k historical markers and uncover the hidden gems of America as you travel. Get started on your adventure and download our free app today!",
+      "language": "en"
+    },
+    {
+      "id": "9df9cb4ad35b5970",
+      "url": "https://tomotcha.com/en/",
+      "title": "Tomotcha | The Japanese tea subscription service",
+      "summary": "Japanese Tea in your mailbox every month. Free shipping all around the world.",
+      "language": "en"
+    },
+    {
+      "id": "7826cabf88a1b257",
+      "url": "https://tressless.com/",
+      "title": "The largest hair loss community and research database in the world - Tressless",
+      "summary": "Tressless is the largest hair regrowth community and research database in the world, focused on science-backed treatment options.",
+      "language": "en"
+    },
+    {
+      "id": "897f9404454f6c62",
+      "url": "https://www.memoryplugin.com/",
+      "title": "MemoryPlugin",
+      "summary": "Cure your AI of amnesia with MemoryPlugin. A simple, powerful plugin that helps your AI remember things.",
+      "language": "en"
+    },
+    {
+      "id": "41649a553c9e9c52",
+      "url": "https://github.com/mickael-kerjean/filestash",
+      "title": "GitHub - mickael-kerjean/filestash: :file_folder: What Dropbox should have been if it was based on SFTP, S3, FTP, WebDAV, Git, and more",
+      "summary": ":file_folder: What Dropbox should have been if it was based on SFTP, S3, FTP, WebDAV, Git, and more - mickael-kerjean/filestash",
+      "language": "en"
+    },
+    {
+      "id": "8e482a8ba535e4f0",
+      "url": "https://flxwebsites.com/",
+      "title": "Give your small business a big online presence. • FLX Websites",
+      "summary": "Running a small business is anything but a small job. Your lists are long, and your days are short. Who's got time to build and maintain a website? We do. We're FLX Websites. A dedicated team of web and marketing pros who specialize in local businesses.",
+      "language": "en"
+    },
+    {
+      "id": "1911b74aa0f6ddbc",
+      "url": "https://denchisoft.com/",
+      "title": "VTube Studio",
+      "summary": "VTube Studio is an app for Virtual YouTubers that makes VTubing easy and fun!!",
+      "language": "en-US"
+    },
+    {
+      "id": "2c1b286619060e23",
+      "url": "https://hortus.dev/",
+      "title": "Hortus.dev",
+      "summary": "Hortus.dev",
+      "language": "en"
+    },
+    {
+      "id": "b9a20961873f1496",
+      "url": "https://www.flowtelic.com",
+      "title": "Flowtelic - Intelligent Note-Taking",
+      "summary": "Experience the future of note-taking with Flowtelic. Capture, organize, and connect your thoughts effortlessly.",
+      "authors": [
+        {
+          "name": "Flowtelic Team"
+        }
+      ],
+      "language": "en"
+    },
+    {
+      "id": "0ff96a3009702f80",
+      "url": "https://book.railean.net/",
+      "title": "0! Книга для добрых детей",
+      "summary": "Написана для собственных нужд, но возможно пригодится и другим родителям.",
+      "language": "ru"
+    },
+    {
+      "id": "e71558e9d9f95718",
+      "url": "https://clickconnector.com/",
+      "title": "ClickConnector: Customer Support Platform For SaaS",
+      "summary": "The ultimate AI-powered support tool with HelpDesk, KnowledgeBase Portals, Feature Requests, Bug Reports, Changelogs, Email Drip Campaigns, Product Tours, NPS, Testimonial Collection, Checklists and everything you need",
+      "language": "en"
+    },
+    {
+      "id": "d3c810676309a580",
+      "url": "https://www.comicsmaker.ai/",
+      "title": "Create Comics Using AI | ComicsMaker.ai",
+      "summary": "Create comics using AI with ComicsMaker.ai - the best online platform for making comics for free. Our AI-powered comic generator makes it easy to bring your stories to life. Start creating comics using AI today!",
+      "language": "en"
+    },
+    {
+      "id": "cb862b6eefea3be2",
+      "url": "https://www.jummbo.ai/",
+      "title": "Jummbo",
+      "summary": "Transform your lead generation with Jummbo’s AI-powered platform. Build precise, real-time prospect lists, enriched with tailored emails and call scripts, all in one place. Experience seamless data enrichment and personalised outreach at scale – the future of smarter prospecting.",
+      "language": "en-AU"
+    },
+    {
+      "id": "854658f2f574846f",
+      "url": "https://archive.org/details/carosbookofpoker00caro",
+      "title": "Caro's book of poker tells : Mike Caro : Free Download, Borrow, and Streaming : Internet Archive",
+      "summary": "Ask the publishersto restore access to 500,000+ books.",
+      "language": "en"
+    },
+    {
+      "id": "116a205294c354eb",
+      "url": "https://pocket.tailwindui.com/",
+      "title": "Pocket - Invest at the perfect time.",
+      "summary": "By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses.",
+      "language": "en"
+    },
+    {
+      "id": "0956e8049bc43b28",
+      "url": "https://hackernewsletter.com/",
+      "title": "Hacker Newsletter",
+      "summary": "A weekly newsletter of the best articles on startups, technology, programming, and more. All links are curated by hand from the popular Hacker News site.",
+      "language": "en"
+    },
+    {
+      "id": "45159a79514bfdd5",
+      "url": "https://smoothtrack.app/",
+      "title": "SmoothTrack 2.0"
+    },
+    {
+      "id": "f30b1c3e32d668d1",
+      "url": "https://www.farmmarketingsolutions.com/stress-free-chicken-tractor-plans",
+      "title": "Stress-Free Chicken Tractor Plans — Farm Marketing Solutions",
+      "summary": "How to build your first DIY chicken tractor, raise meat chickens, and start your poultry farm or homestead.",
+      "language": "en-US"
+    },
+    {
+      "id": "ad3839a103227a37",
+      "url": "https://roguestargun.com/",
+      "title": "Rogue Stargun | VR Space Flight",
+      "summary": "Immersive Space and Ground Combat"
+    },
+    {
+      "id": "2f37acc70b019c0d",
+      "url": "https://zwemindex.nl/",
+      "title": "Vind alle zwemplekken en zwembaden in Nederland op zwemindex.nl",
+      "summary": "Ontdek alle 765 zwembaden en 533 zwemplekken in Nederland en vlak over de grens. Dichtbij en gesorteerd op afstand vanaf elke woonplaats.",
+      "authors": [
+        {
+          "name": "Kasper Kamperman"
+        }
+      ],
+      "language": "nl"
+    },
+    {
+      "id": "c3b9e004a53a6cde",
+      "url": "https://www.kasperkamperman.com/blog/web/import-csv-in-mongodb/",
+      "title": "Import CSV in MongoDB and keep it in sync. ⋆ Kasper Kamperman",
+      "summary": "Import CSV in MongoDB and keep it in sync by using PHP. The CSV can be read directly from Google Sheets, without the need of an API.",
+      "authors": [
+        {
+          "name": "Kasper Kamperman"
+        }
+      ],
+      "language": "en-US"
+    },
+    {
+      "id": "bf0c3a39b6a402b0",
+      "url": "https://www.nrimeet.app/",
+      "title": "Home",
+      "summary": "Koottali : Leading Malayali Dating and Friendship App",
+      "authors": [
+        {
+          "name": "NRI Meet"
+        }
+      ],
+      "language": "en"
+    },
+    {
+      "id": "ec41f7e42daba3f9",
+      "url": "https://fixparser.dev/",
+      "title": "FIXParser",
+      "summary": "The TypeScript library for working with FIX protocol messages",
+      "language": "en"
+    },
+    {
+      "id": "2bbcce5470c63bff",
+      "url": "https://carelesswhisper.app/",
+      "title": "Voice Type | Accurate Voice Typing for Mac",
+      "summary": "Fast, accurate Mac dictation with a single hotkey. One-time purchase; works everywhere.",
+      "language": "en"
+    },
+    {
+      "id": "abc2427841fd8c45",
+      "url": "https://zenmic.com/",
+      "title": "ZenMic - AI Podcast Generator",
+      "summary": "Transform any text into professional podcast content in minutes. Generate natural-sounding voices and engaging scripts with our advanced AI technology.",
+      "language": "en"
+    },
+    {
+      "id": "6a678dc62a2d7fad",
+      "url": "https://thegreatestbooks.org/",
+      "title": "The Greatest Books of All Time",
+      "summary": "The Greatest Books of All Time. This list is generated by aggregating 715 lists from various critics, authors, experts, and readers.",
+      "language": "en"
+    },
+    {
+      "id": "56bc15eb54a562b7",
+      "url": "https://openinverter.org/wiki/Main_Page",
+      "title": "openinverter.org wiki",
+      "summary": "Wiki Index- quick reference for all info on the wiki.",
+      "language": "en"
+    },
+    {
+      "id": "892d2408cbdc875a",
+      "url": "https://securitynewsletter.co/",
+      "title": "Security Newsletter - weekly curated infosec news",
+      "summary": "A weekly e-mail with the latest security news.",
+      "language": "en"
+    },
+    {
+      "id": "2800148f2482fd9c",
+      "url": "https://www.skybear.net/",
+      "title": "Skybear.NET - Automate your HTTP API tests",
+      "summary": "Skybear.NET is a managed platform automating Synthetic HTTP API testing. Get started today, ensure your APIs work. Always!",
+      "authors": [
+        {
+          "name": "Lambros Petrou"
+        }
+      ],
+      "language": "en"
+    },
+    {
+      "id": "12ec478459f68233",
+      "url": "https://www.heuristi.ca/",
+      "title": "All-in-One Learning Platform using Concept Maps, Flashcards, AI Chats, and more | Heuristica",
+      "summary": "Learn faster with AI by creating concept maps, flashcards, quizzes, summaries, and study notes. Summarize YouTube videos, chat with AI, and turn ideas into learning tools all in one platform.",
+      "language": "en"
+    },
+    {
+      "id": "2fc6dbf4730c7918",
+      "url": "https://apps.apple.com/us/app/fitbee-calorie-macro-counter/id6443979108",
+      "title": "FitBee Calorie & Macro Counter App - App Store",
+      "summary": "Download FitBee Calorie & Macro Counter by Cortado Labs, LLC on the App Store. See screenshots, ratings and reviews, user tips, and more games like FitBee…",
+      "language": "en-US"
+    },
+    {
+      "id": "2e2477488a0c775c",
+      "url": "https://runjs.app/",
+      "title": "RunJS - JavaScript and TypeScript Playground for macOS, Windows and Linux",
+      "summary": "Write and run JavaScript with live feedback and access to Node.js and browser APIs. RunJS is an easy-to-use playground app for learning and prototyping.",
+      "language": "en"
+    },
+    {
+      "id": "9e388c4b62d0c439",
+      "url": "https://monadile.framer.website/",
+      "title": "Monadile Portfolio",
+      "summary": "Branding & Lead UX/UI Designer",
+      "language": "en"
+    },
+    {
+      "id": "2cfdc318ad798697",
+      "url": "https://mathclub.ai/math-exercises",
+      "title": "MathClub: Weekly Olympiad Math Exercises",
+      "summary": "Prepare for math contests by solving authentic Olympiad problems. Receive new exercises weekly and enhance your skills with personalized AI feedback. Explore genuine problems from past Math Competitions and Olympiads, crafted to refine your problem-solving abilities through AI-driven insights.",
+      "authors": [
+        {
+          "name": "MathClub, Inc."
+        }
+      ],
+      "language": "en"
+    },
+    {
+      "id": "b8ee853a535441aa",
+      "url": "https://monitorprices.org/",
+      "title": "Monitor Prices - Comparison of all monitors on Amazon",
+      "summary": "Comparison of all monitors on Amazon.",
+      "language": "en"
+    },
+    {
+      "id": "1eb54de28f5b431a",
+      "url": "https://tunnelmole.com/",
+      "title": "Tunnelmole - A free and open source tunneling tool",
+      "summary": "Access localhost from anywhere!",
+      "authors": [
+        {
+          "name": "Robbie Cahill"
+        }
+      ],
+      "language": "en-us"
+    },
+    {
+      "id": "2ef051ed6a0c1b96",
+      "url": "https://www.vpzen.io/",
+      "title": "VPZen | Dedicated, Pay As You Go VPN Servers",
+      "summary": "VPZen",
+      "language": "en"
+    },
+    {
+      "id": "40c75b856d0386b3",
+      "url": "https://neighar.com/",
+      "title": "Home",
+      "summary": "Neighbor’s Ghar",
+      "authors": [
+        {
+          "name": "neighar"
+        }
+      ],
+      "language": "en"
+    },
+    {
+      "id": "7d800d7a3c449abf",
+      "url": "https://compressimage.com/en",
+      "title": "Compress Image",
+      "summary": "Compress images online for free with Compress Image. No sign-up or installation needed. Optimize JPEG/WebP formats fast with on-device processing for privacy."
+    },
+    {
+      "id": "790d2d21d561cf8d",
+      "url": "https://www.thegamingpub.com/",
+      "title": "The Gaming Pub",
+      "summary": "A weekly curated gaming content newsletter.",
+      "authors": [
+        {
+          "name": "The Gaming Pub"
+        }
+      ],
+      "language": "en"
+    },
+    {
+      "id": "7d689d10e39041e3",
+      "url": "https://store.steampowered.com/app/2079120/Warudo/",
+      "title": "Warudo on Steam",
+      "summary": "Warudo is the flexible &amp; personalized 3D VTubing software you have always wanted. Built-in face &amp; hand tracking, custom 3D assets, Twitch/YouTube integration, blueprint system, C# plugins, and so much more.",
+      "language": "en"
+    },
+    {
+      "id": "b7c35534e53830ab",
+      "url": "https://www.lightnote.co/",
+      "title": "Music Theory that isn't boring - Lightnote",
+      "summary": "Interactive lessons for learning Music Theory.",
+      "language": "en"
+    },
+    {
+      "id": "18bf98ab2d437795",
+      "url": "https://canine.sh/",
+      "title": "Canine - A Developer-friendly PaaS for your Kubernetes",
+      "summary": "Canine is an open source deployment platform that makes it easy to deploy and manage your applications."
+    },
+    {
+      "id": "b4ecab4eecb20175",
+      "url": "https://konfig.xyz/",
+      "title": "Konfig product configurators",
+      "summary": "Konfig helps product companies and agencies to create beautiful product configurators without the hassle of custom software, photos and 3d renders.",
+      "language": "en"
+    },
+    {
+      "id": "5094c99565c32928",
+      "url": "https://www.asklibrary.ai/",
+      "title": "AskLibrary - Your AI-Powered Book Mentor",
+      "summary": "Get instant insights across your entire book collection. Explore connections, synthesize knowledge, and maximize learning with AskLibrary's advanced AI conversations.",
+      "language": "en"
+    },
+    {
+      "id": "c49e2a8604cb91e5",
+      "url": "https://reddit-saved.com/",
+      "title": "reddit-saved",
+      "summary": "While browsing reddit I kept saving interesting links/discussions that I wanted to come\n                                back at a later time. Reddit limits saved posts/comments to 1000 and there is no easy\n                                way to search for that specific topic you remember you saved 2 months ago. Cuereddit-saved.com! It allows you to search all your\n                                saved items and group them by assigning tags to specific items.",
+      "language": "en"
+    },
+    {
+      "id": "8b75abb844849487",
+      "url": "https://virtual-graph-paper.com/",
+      "title": "Virtual Graph Paper",
+      "summary": "Virtual Graph Paper is a web application for creating drawings and illustrations on a virtual grid. You can use it right here in your browser. When you are done, your drawing can be downloaded as an SVG file."
+    },
+    {
+      "id": "a8c368f38fd0f5fe",
+      "url": "https://resumey.pro/",
+      "title": "Markdown to PDF Resume | Beautiful Markdown Resume Templates",
+      "summary": "Create a Markdown resume with professional templates. Convert your Markdown resume to PDF easily with ATS-friendly formatting and a clean, modern design",
+      "language": "en"
+    },
+    {
+      "id": "1e602bd008da5759",
+      "url": "https://cophone.io/",
+      "title": "Virtual Smartphone | Cophone",
+      "summary": "Your virtual smartphone. cophone is a virtual smartphone solution, accessible anywhere, anytime, from any device with an internet connection.",
+      "language": "en"
+    },
+    {
+      "id": "ace035212ec1c8cd",
+      "url": "https://www.handsonscala.com/",
+      "title": "Hands-on Scala Programming",
+      "summary": "Hands-on Scalateaches you how to use the Scala programming language in a practical,\n                project-based fashion. This book is designed to quickly teach an\n                existing programmer everything needed to go from \"hello world\" to\n                building production applications like interactive websites, parallel web\n                crawlers, and distributed systems in Scala. In the process you will learn\n                how to use the Scala language to solve challenging problem"
+    },
+    {
+      "id": "08ed0fc45a82448f",
+      "url": "https://mockoon.com/",
+      "title": "Mockoon - Create mock APIs in seconds with Mockoon",
+      "summary": "Mockoon is the easiest and quickest way to run mock REST API servers. No remote deployment, no account required, free, open source and cross-platform.",
+      "language": "en"
+    },
+    {
+      "id": "ab74d1dd4cd54aba",
+      "url": "https://bubble.io/figma-to-bubble",
+      "title": "Figma to Bubble Converter",
+      "summary": "Launch faster by importing your Figma designs to Bubble and turning them into production-ready apps, no rebuilding required",
+      "language": "en"
+    },
+    {
+      "id": "572189a457057a8c",
+      "url": "https://play.google.com/store/apps/details?id=nu.bi.moya",
+      "title": "MoyaApp - Apps on Google Play",
+      "summary": "MoyaApp is your datafree super-app in South Africa",
+      "language": "en-US"
+    },
+    {
+      "id": "60ffe0b44943d158",
+      "url": "https://www.audjust.com/",
+      "title": "Audjust - Intelligently resize and loop audio to fit your needs!",
+      "summary": "Shorten and lengthen a song, making it the perfect length to match a video or performance. or find a perfect loop for your next project!",
+      "language": "en"
+    },
+    {
+      "id": "437c4162c6de2903",
+      "url": "https://gifmemes.io/",
+      "title": "Gif meme maker | Gifmemes.io",
+      "summary": "Gifmemes.io is a tool for creating and sharing gif memes with motion tracked text and image. You can choose from meme templates or upload your own gif."
+    },
+    {
+      "id": "fa10e7137143763b",
+      "url": "https://datafree.tech/",
+      "title": "Home",
+      "summary": "Connect More People. Datafree empowers businesses and users to access digital tools and platforms without using personal mobile data. Go Datafree Find Your Solution Years keeping people connected — without the data drama 0 + years We take away digital access problems. When expensive mobile data means most people choose not to engage with a […]",
+      "language": "en-US"
+    },
+    {
+      "id": "cdd0c496e25f9b23",
+      "url": "https://gadabout.ai/",
+      "title": "Gadabout.ai",
+      "summary": "Monitor your brand visibility in AI search",
+      "language": "en"
+    },
+    {
+      "id": "75876212e6ae340b",
+      "url": "https://cadenceprints.com/",
+      "title": "Strava Map Prints",
+      "summary": "Use your Strava data to make your own custom map poster prints",
+      "language": "en"
+    },
+    {
+      "id": "cc964879c80b6776",
+      "url": "https://minute-master.com/",
+      "title": "Business Meeting Governance and Minutes by Minute Master",
+      "summary": "A cutting-edge platform designed to revolutionise the way organisations produce the Minutes and Action Logs for business meetings.",
+      "language": "en"
+    },
+    {
+      "id": "802774a89f92c177",
+      "url": "https://pinkpigeon.co.uk/",
+      "title": "Pink Pigeon Digital",
+      "summary": "The Pink Pigeon Website Builder lets you create pixel-perfect, serverless websites faster and easier than ever before.",
+      "language": "en"
+    },
+    {
+      "id": "841a0f5a577b5bdb",
+      "url": "https://konfig.xyz/pricing",
+      "title": "Konfig product configurators",
+      "summary": "Konfig helps product companies and agencies to create beautiful product configurators without the hassle of custom software, photos and 3d renders.",
+      "language": "en"
+    },
+    {
+      "id": "a5fcecce361c6063",
+      "url": "https://freesolitaire.win/",
+      "title": "Klondike Solitaire",
+      "summary": "Play the classic Solitaire card game online, on phone, tablet, or computer. Fast and free. No ads until game over.",
+      "language": "en"
+    },
+    {
+      "id": "7b5fe3c04d461b82",
+      "url": "https://vocabuo.com/",
+      "title": "Vocabuo - The Vocabulary App",
+      "summary": "Vocabuo helps you learn English, Spanish, French, Italian, German and Swedish with smart spaced repetition flashcards. Use The Vocabulary App to learn from content.",
+      "language": "en"
+    },
+    {
+      "id": "bcabaf8b102e613d",
+      "url": "https://www.pdf.to/",
+      "title": "PDF.to: All-in-One PDF Toolkit",
+      "summary": "PDF.to lets you convert PDF to Word, JPEG, PNG, OCR, DOC, Compress PDF's and much more.  With the ability to convert to PDF as well and an API",
+      "language": "en"
+    },
+    {
+      "id": "69422b8dc99d8459",
+      "url": "https://scrapeninja.net/",
+      "title": "ScrapeNinja Web Scraping API - turns websites into data, on scale. 🚀",
+      "summary": "ScrapeNinja handles headless browsers, proxies, timeouts, retries, and helps with data extraction, so you can just get the data in JSON.",
+      "language": "en"
+    },
+    {
+      "id": "d3a5c5cb444200ec",
+      "url": "https://codeapprove.com/",
+      "title": "CodeApprove",
+      "language": "en"
+    },
+    {
+      "id": "ea0484f44efb3647",
+      "url": "https://www.achromatic.dev/",
+      "title": "Achromatic | Next.js 16 SaaS Starter Kits",
+      "summary": "Ship your SaaS 10x faster with production-ready Next.js 16 starter kits. Includes authentication, Stripe billing, and multi-tenancy.",
+      "authors": [
+        {
+          "name": "Achromatic"
+        }
+      ],
+      "language": "en"
+    },
+    {
+      "id": "48ff926fa3bed2b0",
+      "url": "https://drawabox.com/",
+      "title": "Drawabox | A free, exercise based approach to learning the fundamentals of drawing",
+      "summary": "A free, exercise based approach to learning the fundamentals of drawing. We tackle drawing in a logical, analytical fashion inspired by concept artists and industrial designers, focusing on technical skills that can be developed with hard work and determination.",
+      "language": "en_US"
+    },
+    {
+      "id": "95b90debe3afe50f",
+      "url": "https://formtester365.com/",
+      "title": "Automated Form Testing | Gravity Forms Troubleshooting | FormTester 365",
+      "summary": "Needing gravity forms troubleshooting? FormTester 365 is here to help! Learn how getting automated form testing daily can save you money & generate more leads!",
+      "language": "en-US"
+    },
+    {
+      "id": "200876be2034a1de",
+      "url": "https://www.atomicworkflows.com/atomic-note-taking/",
+      "title": "Atomic Note-Taking",
+      "summary": "Become adeep thinkerso that you canrecall more,think criticallyanddiscover new ideasnever before seen",
+      "language": "en"
+    },
+    {
+      "id": "11eadaf4802a1ed2",
+      "url": "https://wavekit.app/",
+      "title": "Wavekit",
+      "summary": "Audio hosting for your website",
+      "language": "en"
+    },
+    {
+      "id": "28f636507cb8e325",
+      "url": "https://aptakube.com/",
+      "title": "Aptakube · Kubernetes GUI | macOS, Windows, Linux",
+      "summary": "Aptakube is a lightweight, modern and multi-cluster GUI client for Kubernetes. Manage your cluster from your desktop. Try it free now!",
+      "language": "en"
+    },
+    {
+      "id": "d745bfd384ea31f1",
+      "url": "https://www.storytreasure.ai/",
+      "title": "Story Treasure",
+      "summary": "Create magical children's books with AI",
+      "language": "en"
+    },
+    {
+      "id": "73e8bd2c507e33de",
+      "url": "https://foxev.io/batteries/",
+      "title": "How do Lithium Batteries work? foxev.io",
+      "summary": "Learn everything about lithium batteries from someone who has built electric cars. Videos, widgets, articles and an app tailored to your pace",
+      "language": "en"
+    },
+    {
+      "id": "7906352299c19fbd",
+      "url": "https://hyperpaper.me/",
+      "title": "Planner and calendar for reMarkable, Supernote, Kindle Scribe, and more",
+      "summary": "Create your own custom planner, designed specifically for your eInk device. Includes calendars, tasks, notes, habit tracking, and more!",
+      "language": "en"
+    },
+    {
+      "id": "d20f2e6999e4f089",
+      "url": "https://www.thecompaniesapi.com/",
+      "title": "The Companies API - Enrichment API for Companies",
+      "summary": "Search and enrich millions companies, find similar businesses, and get notified about important events. Use our API and data to supercharge your product or marketing tools.",
+      "authors": [
+        {
+          "name": "The Companies API"
+        }
+      ],
+      "language": "en"
+    },
+    {
+      "id": "5fe177d8757a88ac",
+      "url": "https://smstoslack.com/",
+      "title": "Send & receive text messages in Slack",
+      "summary": "SMS to Slack lets you send and receive text messages from your Slack channels. Whether for customers, vendors, or more. Get started in minutes.",
+      "authors": [
+        {
+          "name": "SMS to Slack"
+        }
+      ],
+      "language": "en"
+    },
+    {
+      "id": "7184f994a3f165c5",
+      "url": "https://grubbux.com/",
+      "title": "GrubBux",
+      "summary": "Eat. Scan. Enjoy. Repeat.",
+      "language": "en"
+    },
+    {
+      "id": "598321885d7ce93f",
+      "url": "https://wolftickets.ai/events/ufc-310-pantoja-vs-asakura/1398636328219261226/movsar-evloev-vs-aljamain-sterling/1387/",
+      "title": "Movsar Evloev vs. Aljamain Sterling - UFC 310: Pantoja vs. Asakura Results & AI Breakdown",
+      "summary": "Get the full UFC 310: Pantoja vs. Asakura results for  vs . Dive into AI-powered post-fight analysis, fight statistics, and future predictions.",
+      "language": "en"
+    },
+    {
+      "id": "ec73d1a9cb610cf2",
+      "url": "https://www.newyorker.com/magazine/2007/08/06/an-unsolved-killing?currentPage=all&mobify=0",
+      "title": "An Unsolved Killing",
+      "summary": "What does the firing of a U.S. Attorney have to do with a murder case?",
+      "authors": [
+        {
+          "name": "Jeffrey Toobin"
+        }
+      ],
+      "language": "en-US"
+    },
+    {
+      "id": "3e98b8bb6cde8708",
+      "url": "https://www.briefcatch.com/blog/ten-lessons-from-the-new-yorker",
+      "title": "Ten Ways to Write Like <i>The New Yorker</i>",
+      "summary": "Looking for some writing inspiration?",
+      "language": "en"
+    },
+    {
+      "id": "1aa0c35f8cb1c7a3",
+      "url": "https://github.com/willcrichton/flowistry",
+      "title": "GitHub - willcrichton/flowistry: Flowistry is an IDE plugin for Rust that helps you focus on relevant code.",
+      "summary": "Flowistry is an IDE plugin for Rust that helps you focus on relevant code. - willcrichton/flowistry",
+      "language": "en"
+    },
+    {
+      "id": "f39fbd8d42b18f20",
+      "url": "https://user-images.githubusercontent.com/663326/155209805-75a23ed9-01ba-4100-b8bb-324b516f84cf.png",
+      "summary": "�pK�(\u0007wn�\bŬ�!6)\u001cU��\u0006�h�y���FGh� a����\u0004�\u001ft���Y�N\n���+ڊ\t��wA����'\u0017�\u001fwlJGX��|E����Q��2i�B\u0015�LU\u000fj]�\u0010\u0005�<��x\r�����?��l�r}.L�gwGD�\u001a:wTjN:�\u000b�\u0017��ҵ�G\u000e��}3e&a\u0015�i�+\u001e�\u0014)UW�T��\u0004\u001cO���;�F���\u0007��nɮ_;_���M��\u0010�媀���\u0013��3�{�\"�����6���~��ǫݲ�?�6$�g2�\u0017�f\u0012V��\u001c=I�\u0017�\u0015<�\u0016�\u0010|O�9C��ӕ���d�*���{\u0014�+\u0007��\u0014��v�5�`��k�J}�\u001c����=�\\2e�L,+���I�DO��'�3�^�:���A_��o��)���'-�\u0004\n�ҡ�}I�\u0004z3�>+���Gѐ\u001b�S�\u0013{e�2�\u001f'�mVʩS\u001a��\u000bk����g1�յ\u001ev�?\t�F�\u0018\"?{l�\u000e8�g�C�c\u0012Q<�a���\u0000*�%\u0013V�Q7��f\u0007ϖ?���\u001d�ѷf�$��5?oU�?<=!\u00101�\u0017��߫P��Q\u0005^b�-&]�[X\u00051��J�\u0018dтq�lQ��/�����\\M��w\u001fS؁~?�"
+    },
+    {
+      "id": "e3eeec0500746870",
+      "url": "https://user-images.githubusercontent.com/663326/155062086-4d58a149-86c8-4a48-a6aa-a07cf027641c.gif",
+      "summary": "n�\u000b��;�I$\u0012r\u000f�\u0010\bߩ\u000b�5W��W�\u00103��T1�\b�Ч\u0016�\u000e-����\u0007A�\u0003?�z�Z\nr��\f[\n�`km��@�\u0006\r\u000b�. \rj�\u000f��\u0002��\u0007�@\n[�\u0003�\u0004��)Y�\u0018��W�K\u000b��v�a\f�+���\u0007�Á��\u0006e��\u001f�\u0006�\u0010Fy�O\u0013a\u001e�\u0001��\u0004J%�%�\u0000\u0006p0\u0007��q\u0019�p@\n�q\u000f��^\u0019\u0012\u001f�ʑ\u001d� �8�0�ƺ\t�\u0000\u000f�@\u00055�\u0003@�\"��\u000eR@�\u001b�\u0012�`�R�\u000e/\u0001\u000f9�\u0004�@\u001b�\t0��*�\u000eJP\u0003Q@\u001a\\�v* ��\u001b\u000f.�\u0003k��#o�\u000f�0=�P\u0007k\u0019\nYe2g0\u0004Z`H�r\n�v\r\u001b\u0004$�\u0010�* �\u0014!\t��r!\u0018\u000b\u0007z�[�\u0006��\u000e[�\u0005�0��\u0019�\u0003a\n�ɘ\u001d\u0012N�$\n\u0010�F��\u001d5�W6:\u0006gճ�\u0004\f�\u001a:�0\u000f�pt�8\u0010|\u0015\b��6���\u001e8\u0006�)\u0010�\u0000\u000b7\n3.�P'\u0005���FH�u�R�o�IU�PO��U�\u0015\u001b��\u0004{:M�3\f��V�P\f\u0003���8\u000f�\u0010\b��R'�F\u001fB6�YP�㒇 �+�\u0004��Hy�\u0003<�\n�\u0011\u000f�PSj�6\u0003�\u000f�����K��\u0006X�\u0005g`\u000f.Q\r=�\u0003r@!�\u0000\u0006A�`\u0004�`(�\u0005B`"
+    },
+    {
+      "id": "df55a6ad62f77dbb",
+      "url": "https://marketplace.visualstudio.com/items?itemName=wcrichton.flowistry",
+      "title": "Flowistry - Visual Studio Marketplace",
+      "summary": "Extension for Visual Studio Code - Information Flow in the IDE for Rust",
+      "language": "en-us"
+    },
+    {
+      "id": "490e0b433e301059",
+      "url": "https://camo.githubusercontent.com/ab2edb2b9998cf54f99e8127845099a7515a124348044061a7131ba6d514f2f9/68747470733a2f2f696d672e736869656c64732e696f2f6372617465732f762f666c6f7769737472792e737667",
+      "title": "crates.io: v0.5.44"
+    },
+    {
+      "id": "f2b9d52ea593d2d0",
+      "url": "https://open-vsx.org/extension/wcrichton/flowistry",
+      "title": "Open VSX Registry",
+      "language": "en"
+    },
+    {
+      "id": "4058098381fa44ec",
+      "url": "https://user-images.githubusercontent.com/663326/134039225-68d11dce-be71-4f33-8057-569346ef26bc.png"
+    },
+    {
+      "id": "d1a3e4704ec1ea1b",
+      "url": "https://github.com/willcrichton/flowistry/issues/36",
+      "title": "Unexpected highlights from Flowistry · Issue #36 · willcrichton/flowistry",
+      "summary": "If you use Flowistry and it highlights something unexpectedly -- either it misses something you expect to be highlighted, or it highlights something that seems irrelevant -- please post a screensho...",
+      "language": "en"
+    },
+    {
+      "id": "44fdc1e652414156",
+      "url": "https://github.com/cognitive-engineering-lab/rustc_plugin/tree/main",
+      "title": "GitHub - cognitive-engineering-lab/rustc_plugin: A framework for writing plugins that integrate with the Rust compiler",
+      "summary": "A framework for writing plugins that integrate with the Rust compiler - cognitive-engineering-lab/rustc_plugin",
+      "language": "en"
+    },
+    {
+      "id": "4c230ac4eef22dca",
+      "url": "https://github.com/willcrichton/flowistry/issues",
+      "title": "willcrichton/flowistry",
+      "summary": "Flowistry is an IDE plugin for Rust that helps you focus on relevant code. - willcrichton/flowistry",
+      "language": "en"
+    },
+    {
+      "id": "637c3a3748d73307",
+      "url": "https://doc.rust-lang.org/nightly/nightly-rustc/rustc_middle/mir/struct.Place.html",
+      "title": "Place in rustc_middle::mir - Rust",
+      "summary": "Places roughly correspond to a “location in memory.” Places in MIR are the same mathematical object as places in Rust. This of course means that what exactly they are is undecided and part of the Rust memory model. However, they will likely contain at least the following pieces of information in some form:",
+      "language": "en"
+    },
+    {
+      "id": "b33a410467ca26bb",
+      "url": "https://user-images.githubusercontent.com/663326/134070630-47b95f41-a4a7-4ded-a5cb-9884d1af2468.png"
+    },
+    {
+      "id": "90f33d01bf6d3ca0",
+      "url": "https://user-images.githubusercontent.com/663326/155208449-83fceff7-86fe-4fe8-9fca-62552e6b0b43.png"
+    },
+    {
+      "id": "b1c747414be51d87",
+      "url": "https://camo.githubusercontent.com/c890889ac1ef0f000475f9be782dfcccdbb87115eaf72956031c48d2d1967b5e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f646f63732d6275696c742d626c7565",
+      "title": "docs: built"
+    },
+    {
+      "id": "a9289d3d83c3422e",
+      "url": "https://willcrichton.net/flowistry/flowistry/",
+      "title": "flowistry - Rust",
+      "summary": "This crate provides the Flowistry API, a modular information flow analysis for Rust programs. The theory and evaluation of Flowistry is described in the paper “Modular Information Flow through Ownership” (Crichton et al. 2022). See example.rs for an example of how to use the Flowistry API.",
+      "language": "en"
+    },
+    {
+      "id": "e4e4efc61fae0430",
+      "url": "https://discord.com/invite/XkcpkQn2Ah",
+      "title": "Discord - Group Chat That’s All Fun & Games",
+      "summary": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to talk, play, and hang out."
+    },
+    {
+      "id": "bfa0b8113569f495",
+      "url": "https://user-images.githubusercontent.com/663326/155208955-1f47ab0c-f3ae-4028-82b3-6f67e6fc0db7.png"
+    },
+    {
+      "id": "18a8ebb65e386c8e",
+      "url": "https://user-images.githubusercontent.com/663326/155062527-6b42f64a-3429-4572-860f-7c2e244691d6.gif"
+    },
+    {
+      "id": "9b24291a8f15f959",
+      "url": "https://github.com/willcrichton/flowistry/actions/workflows/tests.yml/badge.svg",
+      "title": "Tests - passing"
+    },
+    {
+      "id": "38c9e8847e5b2987",
+      "url": "https://user-images.githubusercontent.com/663326/155207447-4efb34b1-5e3d-4416-89aa-a0f7cd334ca4.png"
+    },
+    {
+      "id": "efa5707c06bbaf8f",
+      "url": "https://rust-lang.zulipchat.com/",
+      "title": "Public view of rust-lang | Zulip team chat",
+      "summary": "Browse the publicly accessible channels in rust-lang without logging in.",
+      "language": "en"
+    },
+    {
+      "id": "1fdf58db26157856",
+      "url": "https://rustc-dev-guide.rust-lang.org/mir/index.html",
+      "title": "The MIR (Mid-level IR) - Rust Compiler Development Guide",
+      "summary": "A guide to developing the Rust compiler (rustc)",
+      "language": "en"
+    },
+    {
+      "id": "62e21a77507c88f6",
+      "url": "https://cel.cs.brown.edu/paper/modular-information-flow-ownership/",
+      "title": "Modular Information Flow through Ownership",
+      "language": "en-US"
+    },
+    {
+      "id": "6dba295c014cdad0",
+      "url": "https://github.com/rust-lang/rustup/issues/988",
+      "title": "Rustup (including proxies) is not safe for concurrent use · Issue #988 · rust-lang/rustup",
+      "summary": "(Edited to capture all the details that have emerged over time) Recovering from this bug: Usually just doing a rustup component remove NAME && rustup component add NAME will fix things. Sometimes r...",
+      "language": "en"
+    },
+    {
+      "id": "33881a5cbae54066",
+      "url": "https://gist.github.com/blessanm86/6879d03782ecf350e7b1f683b4e51e8f",
+      "title": "Quick Ref Notes for German Driving License Test",
+      "summary": "Quick Ref Notes for German Driving License Test. GitHub Gist: instantly share code, notes, and snippets.",
+      "authors": [
+        {
+          "name": "262588213843476"
+        }
+      ],
+      "language": "en"
+    },
+    {
+      "id": "38f802a291eece73",
+      "url": "https://signoz.io/blog/mcp-observability-with-otel/",
+      "title": "MCP Observability with OpenTelemetry",
+      "summary": "Learn how to monitor MCP server-client systems with OpenTelemetry. This guide covers the importance of observability, common failure modes, and a step-by-step implementation to ensure your MCP server-client systems are fully instrumented.",
+      "language": "en-us"
+    },
+    {
+      "id": "4a1992b5e0c2cfb9",
+      "url": "https://jasonspielman.com/notebooklm",
+      "title": "Jason Spielman • Designing NotebookLM",
+      "summary": "Designer, builder, and visual storyteller. Now building Huxe. Previously led design on NotebookLM and contributed to Google AI projects like Gemini and Search. Also shoot photo/video for brands like Coachella, GoPro, and Rivian.",
+      "language": "en"
+    },
+    {
+      "id": "4e4155da51da6bf8",
+      "url": "https://www.tiktok.com/@/video/7430421790863674656?_r=1&_d=secCgYIASAHKAESPgo8Y4M5ts2yqM3gwrtl1ewGoNWB9txNPGE3vjjUs4lcZYdBu0j4SXPzI6pqx9x9CCW0o4sa2NbKi7fVO5DeGgA%3D&u_code=e0fi5dfha78k31&share_item_id=7430421790863674656&timestamp=1731479042&utm_campaign=client_share&utm_source=short_fallback&share_app_id=1233",
+      "title": "TikTok - Make Your Day",
+      "language": "en"
+    },
+    {
+      "id": "9570dab43d9aa700",
+      "url": "https://www.tiktok.com/download-link/ol/bIdt?domain_source=tiktok&af_dp=&pid=channelshare&wid=7436645834866083360&rid=17314790616033122640&vidab=72725665,72814161,70508271,72422413,72783099,72860363,72880871,72929341,72929406,72957816,72974491,72891515,73008414&seo_vidab=&_d=secCgYIASAHKAESPgo8Kcs01gb2qvpPp35xXtsO5KVPENjMOXweM04LpnocAxIKeQWtKkGur2lxnfeuWCOvIRflId4hIhi6gioAGgA%3D&af_adset=reflow&af_adset_id=7071556968142636038_more&af_ad_id=no_referrer&embed_source=&ug_source=&ug_campaign=&release=1.0.0.6458&tt_ug_share_gp_flag=1&c=musical_7430421790863674656&action=top_banner_open_app&tap_target=top_banner_open_app&scheme_url=snssdk1233://aweme/detail/7430421790863674656?gd_label%3Dclick_wap_top_banner_open_app%26params_url%3Dhttps%253A%252F%252Fwww.tiktok.com%252F%2540rafidhoda%252Fvideo%252F7430421790863674656%253F_d%253DsecCgYIASAHKAESPgo8Kcs01gb2qvpPp35xXtsO5KVPENjMOXweM04LpnocAxIKeQWtKkGur2lxnfeuWCOvIRflId4hIhi6gioAGgA%25253D%2526_r%253D1%2526checksum%253D38882468e072a406fb0d3cb078e478f23ac77ce66accf01914974cc039337910%2526link_reflow_popup_iteration_sharer%253D%25257B%252522click_empty_to_play%252522%25253A1%25252C%252522dynamic_cover%252522%25253A1%25252C%252522follow_to_play_duration%252522%25253A-1.0%25252C%252522profile_clickable%252522%25253A1%25257D%2526preview_pb%253D0%2526sec_user_id%253DMS4wLjABAAAAWtqcOpigx8Fj4TSEuuTQhPlSlcy1nLUsGcSnak9zPSpHgAYHVmhNxTPX2zulOyZI%2526share_app_id%253D1233%2526share_item_id%253D7430421790863674656%2526share_link_id%253D0e590725-309a-4f48-a933-ac7ffa13c419%2526sharer_language%253Den%2526social_share_type%253D0%2526source%253Dh5_m%2526timestamp%253D1731479042%2526u_code%253De0fi5dfha78k31%2526ug_btm%253Db8727%25252Cb2878%2526ugbiz_name%253DMAIN%2526user_id%253D7071556968142636038%2526utm_campaign%253Dclient_share%2526utm_medium%253Dandroid%2526utm_source%253Dmore%26needlaunchlog%3D1%26ug_medium%3Dfe_component%26wid%3D7436645834866083360%26vidab%3D72725665%252C72814161%252C70508271%252C72422413%252C72783099%252C72860363%252C72880871%252C72929341%252C72929406%252C72957816%252C72974491%252C72891515%252C73008414%26seo_vidab%3D%26referer%3Dreflow%26ug_source%3D%26ug_campaign%3D%26ec_campaign_info%3D%26release%3D1.0.0.6458%26tt_ug_share_gp_flag%3D1%26page_name%3Dreflow_video"
+    },
+    {
+      "id": "2d95adf30a18e7fa",
+      "url": "https://www.tiktok.com/download-link/ol/bIdt?domain_source=tiktok&af_dp=&pid=channelshare&wid=7436645834866083360&rid=17314790616033122640&vidab=72725665,72814161,70508271,72422413,72783099,72860363,72880871,72929341,72929406,72957816,72974491,72891515,73008414&seo_vidab=&_d=secCgYIASAHKAESPgo8Kcs01gb2qvpPp35xXtsO5KVPENjMOXweM04LpnocAxIKeQWtKkGur2lxnfeuWCOvIRflId4hIhi6gioAGgA%3D&af_adset=reflow&af_adset_id=7071556968142636038_more&af_ad_id=no_referrer&embed_source=&ug_source=&ug_campaign=&release=1.0.0.6458&tt_ug_share_gp_flag=1&c=musical_7430421790863674656&action=top_banner_open_app&tap_target=top_banner_open_app&scheme_url=snssdk1233://user/profile/7071556968142636038?gd_label%3Dclick_wap_top_banner_open_app%26params_url%3Dhttps%253A%252F%252Fwww.tiktok.com%252F%2540rafidhoda%252Fvideo%252F7430421790863674656%253F_d%253DsecCgYIASAHKAESPgo8Kcs01gb2qvpPp35xXtsO5KVPENjMOXweM04LpnocAxIKeQWtKkGur2lxnfeuWCOvIRflId4hIhi6gioAGgA%25253D%2526_r%253D1%2526checksum%253D38882468e072a406fb0d3cb078e478f23ac77ce66accf01914974cc039337910%2526link_reflow_popup_iteration_sharer%253D%25257B%252522click_empty_to_play%252522%25253A1%25252C%252522dynamic_cover%252522%25253A1%25252C%252522follow_to_play_duration%252522%25253A-1.0%25252C%252522profile_clickable%252522%25253A1%25257D%2526preview_pb%253D0%2526sec_user_id%253DMS4wLjABAAAAWtqcOpigx8Fj4TSEuuTQhPlSlcy1nLUsGcSnak9zPSpHgAYHVmhNxTPX2zulOyZI%2526share_app_id%253D1233%2526share_item_id%253D7430421790863674656%2526share_link_id%253D0e590725-309a-4f48-a933-ac7ffa13c419%2526sharer_language%253Den%2526social_share_type%253D0%2526source%253Dh5_m%2526timestamp%253D1731479042%2526u_code%253De0fi5dfha78k31%2526ug_btm%253Db8727%25252Cb2878%2526ugbiz_name%253DMAIN%2526user_id%253D7071556968142636038%2526utm_campaign%253Dclient_share%2526utm_medium%253Dandroid%2526utm_source%253Dmore%26needlaunchlog%3D1%26ug_medium%3Dfe_component%26wid%3D7436645834866083360%26vidab%3D72725665%252C72814161%252C70508271%252C72422413%252C72783099%252C72860363%252C72880871%252C72929341%252C72929406%252C72957816%252C72974491%252C72891515%252C73008414%26seo_vidab%3D%26referer%3Dreflow%26ug_source%3D%26ug_campaign%3D%26ec_campaign_info%3D%26release%3D1.0.0.6458%26tt_ug_share_gp_flag%3D1%26page_name%3Dreflow_video%26video_id%3D7430421790863674656"
+    },
+    {
+      "id": "1491bc64237bec9a",
+      "url": "https://basecoatui.com/components/select/",
+      "title": "Select | Basecoat",
+      "summary": "Displays a list of options for the user to pick from—triggered by a button.",
+      "language": "en_US"
+    },
+    {
+      "id": "e3ae066ed52c72b1",
+      "url": "https://basecoatui.com/components/dropdown-menu/",
+      "title": "Dropdown Menu | Basecoat",
+      "summary": "Displays a menu to the user — such as a set of actions or functions — triggered by a button.",
+      "language": "en_US"
+    },
+    {
+      "id": "8e7e3dfb1cafe664",
+      "url": "https://basecoatui.com/installation/",
+      "title": "Installation | Basecoat",
+      "summary": "How to install and use Basecoat in your app.",
+      "language": "en_US"
+    },
+    {
+      "id": "212cf2afcf741ff9",
+      "url": "https://basecoatui.com/components/toast/",
+      "title": "Toast | Basecoat",
+      "summary": "A succinct message that is displayed temporarily.",
+      "language": "en_US"
+    },
+    {
+      "id": "6dd329c60e0fca3c",
+      "url": "https://github.com/hunvreus/basecoat/tree/main/src",
+      "title": "basecoat/src at main · hunvreus/basecoat",
+      "summary": "A components library built with Tailwind CSS that works with any web stack. - hunvreus/basecoat",
+      "language": "en"
+    },
+    {
+      "id": "77aa2c7a6ad26f96",
+      "url": "https://ui.shadcn.com/docs/theming",
+      "title": "Theming",
+      "summary": "Using CSS Variables and color utilities for theming.",
+      "authors": [
+        {
+          "name": "shadcn"
+        }
+      ],
+      "language": "en"
+    },
+    {
+      "id": "3e66335f6a67f405",
+      "url": "https://tweakcn.com/",
+      "title": "Beautiful themes for shadcn/ui — tweakcn | Theme Editor & Generator",
+      "summary": "Customize theme for shadcn/ui with tweakcn's interactive editor. Supports Tailwind CSS v4, Shadcn UI, and custom styles. Modify properties, preview changes, and get the code in real time.",
+      "authors": [
+        {
+          "name": "Sahaj Jain"
+        }
+      ],
+      "language": "en"
+    },
+    {
+      "id": "e5d1525f154bc654",
+      "url": "https://mozilla.github.io/nunjucks/",
+      "title": "Nunjucks",
+      "summary": "Just use npm to install it:$ npm install nunjucks"
+    },
+    {
+      "id": "d0b1d5a343003d34",
+      "url": "https://github.com/hunvreus/basecoat/blob/main/src/css/basecoat.css",
+      "title": "basecoat/src/css/basecoat.css at main · hunvreus/basecoat",
+      "summary": "A components library built with Tailwind CSS that works with any web stack. - hunvreus/basecoat",
+      "language": "en"
+    },
+    {
+      "id": "a304259cb2fd4449",
+      "url": "https://basecoatui.com/components/popover/",
+      "title": "Popover | Basecoat",
+      "summary": "Displays rich content in a portal, triggered by a button.",
+      "language": "en_US"
+    },
+    {
+      "id": "9f2ee6cf869a1aa4",
+      "url": "https://ui.shadcn.com/themes",
+      "title": "Pick a Color. Make it yours. - shadcn/ui",
+      "summary": "Try our hand-picked themes. Copy and paste them into your project. New theme editor coming soon.",
+      "authors": [
+        {
+          "name": "shadcn"
+        }
+      ],
+      "language": "en"
+    },
+    {
+      "id": "7cf152622f964b9e",
+      "url": "https://basecoatui.com/components/dialog/",
+      "title": "Dialog | Basecoat",
+      "summary": "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.",
+      "language": "en_US"
+    },
+    {
+      "id": "2fcf097c175278ee",
+      "url": "https://basecoatui.com/components/tabs/",
+      "title": "Tabs | Basecoat",
+      "summary": "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+      "language": "en_US"
+    },
+    {
+      "id": "25a48d7fbc460dc9",
+      "url": "https://cdn.jsdelivr.net/npm/basecoat-css@0.3.2/dist/js/dropdown-menu.min.js"
+    },
+    {
+      "id": "b439cbb04176b6cd",
+      "url": "https://basecoatui.com/components/sidebar/",
+      "title": "Sidebar | Basecoat",
+      "summary": "A composable, themeable and customizable sidebar component.",
+      "language": "en_US"
+    },
+    {
+      "id": "5b0f2a5741c92f9b",
+      "url": "https://basecoatui.com/components/card/",
+      "title": "Card | Basecoat",
+      "summary": "Displays a card with header, content, and footer.",
+      "language": "en_US"
+    },
+    {
+      "id": "73edfd979905dfd4",
+      "url": "https://jinja.palletsprojects.com/en/stable/",
+      "title": "Jinja — Jinja Documentation (3.1.x)",
+      "summary": "Jinja is a fast, expressive, extensible templating engine. Special\nplaceholders in the template allow writing code similar to Python\nsyntax. Then the template is passed data to render the final document.",
+      "language": "en"
+    },
+    {
+      "id": "50c59d117a349bca",
+      "url": "https://cdn.jsdelivr.net/npm/basecoat-css@0.3.2/dist/basecoat.cdn.min.css"
+    },
+    {
+      "id": "878cfd833371fc36",
+      "url": "https://basecoatui.com/components/button/",
+      "title": "Button | Basecoat",
+      "summary": "Displays a button or a component that looks like a button.",
+      "language": "en_US"
+    },
+    {
+      "id": "719f36ef1693f812",
+      "url": "https://basecoatui.com/components/input/",
+      "title": "Input | Basecoat",
+      "summary": "Displays a form input field or a component that looks like an input field.",
+      "language": "en_US"
+    },
+    {
+      "id": "f8fe07f1a9c60783",
+      "url": "https://cdn.jsdelivr.net/npm/basecoat-css@0.3.2/dist/js/all.min.js"
+    },
+    {
+      "id": "9f4c9933c6e29c57",
+      "url": "https://cdn.jsdelivr.net/npm/basecoat-css@0.3.2/dist/js/basecoat.min.js"
+    },
+    {
+      "id": "b0812ded00ba10e4",
+      "url": "https://dev.to/pragativerma18/unlocking-the-power-of-api-pagination-best-practices-and-strategies-4b49",
+      "title": "Unlocking the Power of API Pagination: Best Practices and Strategies",
+      "summary": "In the modern application development and data integration world, APIs (Application Programming...",
+      "language": "en"
+    },
+    {
+      "id": "ca17197b54603c9c",
+      "url": "https://docs.divio.com/documentation-system/adoption/",
+      "title": "Who is using the system? | Divio Documentation",
+      "summary": "Find details on who uses the documentation system, inc Divio. This is an incomplete list of projects, products and organisations who have adopted this sytem.",
+      "language": "en"
+    },
+    {
+      "id": "e41607d8aa530a51",
+      "url": "https://docs.divio.com/documentation-system/reference/",
+      "title": "Reference guides | Divio Documentation",
+      "summary": "Find details on how Divio formats reference guides in our documentation. Reference guides are technical descriptions of the machinery and how to operate it.",
+      "language": "en"
+    },
+    {
+      "id": "f0ac20d1ca42f40d",
+      "url": "https://docs.divio.com/documentation-system/structure/",
+      "title": "About the structure | Divio Documentation",
+      "summary": "Find details on how Divio formats the structure in our documentation. This goes into why different documentation can overlap, and end up causing confusion.",
+      "language": "en"
+    },
+    {
+      "id": "a08dac98462bbe4e",
+      "url": "https://docs.divio.com/documentation-system/how-to-guides/",
+      "title": "How-to guides | Divio Documentation",
+      "summary": "Find details on how Divio formats how-to guides in our documentation. How-to guides take the reader through the",
+      "language": "en"
+    },
+    {
+      "id": "fbc04bb81933ea2b",
+      "url": "https://docs.divio.com/documentation-system/",
+      "title": "About | Divio Documentation",
+      "summary": "Find the software documentation system for Divio. Includes comprehensive tutorials, how-to guides, technical reference and explanation. Learn more here.",
+      "language": "en"
+    },
+    {
+      "id": "4058711fe5099dd1",
+      "url": "https://docs.divio.com/documentation-system/tutorials/",
+      "title": "Tutorials | Divio Documentation",
+      "summary": "Find details on how Divio formats tutorial guides in our documentation. These are lessons that take the reader by the hand through a series of steps. Learn more here.",
+      "language": "en"
+    },
+    {
+      "id": "526df5c5b38f69e7",
+      "url": "https://docs.divio.com/documentation-system/explanation/",
+      "title": "Explanation | Divio Documentation",
+      "summary": "Find details on how Divio formats explanations in our documentation. Explanation, or discussions, clarify and illuminate a particular topic. Learn more here.",
+      "language": "en"
+    },
+    {
+      "id": "7669d5383af5399c",
+      "url": "https://docs.divio.com/documentation-system/introduction/",
+      "title": "Introduction | Divio Documentation",
+      "summary": "Find an introduction to how Divio formats and uses documentation. Our approach is to make documentation work for everyone. Learn why this is important here.",
+      "language": "en"
+    },
+    {
+      "id": "423dab3ec1ffb04a",
+      "url": "https://github.com/KristopherKubicki",
+      "title": "KristopherKubicki - Overview",
+      "summary": "Hi! I'm a technology enthusiast with a background in  software and hardware design.  I build bots and bot companies! - KristopherKubicki",
+      "language": "en"
+    },
+    {
+      "id": "9b825837c2ef70d9",
+      "url": "https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/",
+      "title": "My LLM codegen workflow atm",
+      "summary": "A detailed walkthrough of my current workflow for using LLms to build software, from brainstorming through planning and execution.",
+      "authors": [
+        {
+          "name": "Harper Reed <harper@modest.com>"
+        }
+      ],
+      "language": "en-US"
+    },
+    {
+      "id": "bbba856f6f338511",
+      "url": "https://cursor.com/",
+      "title": "Cursor",
+      "summary": "Built to make you extraordinarily productive, Cursor is the best way to code with AI.",
+      "language": "en-US"
+    },
+    {
+      "id": "ba8476579878c6c9",
+      "url": "https://mise.jdx.dev/",
+      "title": "Home | mise-en-place",
+      "summary": "mise-en-place documentation",
+      "language": "en-US"
+    },
+    {
+      "id": "4a925ee01de97881",
+      "url": "https://github.com/yamadashy/repomix",
+      "title": "GitHub - yamadashy/repomix: 📦 Repomix is a powerful tool that packs your entire repository into a single, AI-friendly file. Perfect for when you need to feed your codebase to Large Language Models (LLMs) or other AI tools like Claude, ChatGPT, DeepSeek, Perplexity, Gemini, Gemma, Llama, Grok, and more.",
+      "summary": "📦 Repomix is a powerful tool that packs your entire repository into a single, AI-friendly file. Perfect for when you need to feed your codebase to Large Language Models (LLMs) or other AI tools lik...",
+      "language": "en"
+    },
+    {
+      "id": "88aa3773a83dfa95",
+      "url": "https://aider.chat/docs/leaderboards/",
+      "title": "Aider LLM Leaderboards",
+      "summary": "Quantitative benchmarks of LLM code editing skill.",
+      "language": "en-US"
+    },
+    {
+      "id": "78feca0625264277",
+      "url": "https://fsck.com/",
+      "title": "Jesse Vincent"
+    },
+    {
+      "id": "a2071a5a9f6e3054",
+      "url": "https://www.nikete.com/",
+      "title": "Nikete – Machine Learning ∩ Economics. Theory and methods for better collective cognition, with a focus on mechanism design and decision elicitation.",
+      "summary": "Machine Learning ∩ Economics. Theory and methods for better collective cognition, with a focus on mechanism design and decision elicitation.",
+      "authors": [
+        {
+          "name": "Nikete"
+        }
+      ]
+    },
+    {
+      "id": "c046760580a9a2a4",
+      "url": "https://www.penguinrandomhouse.com/books/741805/co-intelligence-by-ethan-mollick/",
+      "title": "Co-Intelligence by Ethan Mollick: 9780593716717 | PenguinRandomHouse.com: Books",
+      "summary": "AN INSTANT NEW YORK TIMES BESTSELLER  From Wharton professor and author of the popular One Useful Thing Substack newsletter Ethan Mollick comes the definitive playbook for working, learning, and living...",
+      "language": "en-US"
+    },
+    {
+      "id": "48dc901154875a6d",
+      "url": "https://derek.broox.com/",
+      "title": "My name is Derek Brooks",
+      "summary": "Hi, I'm Derek Brooks. I'm a midwestern American dude who enjoys building, traveling, partying, and extremish sports.",
+      "authors": [
+        {
+          "name": "Derek Brooks"
+        }
+      ],
+      "language": "en"
+    },
+    {
+      "id": "178a5a560b51ce14",
+      "url": "https://github.com/Doriandarko/claude-engineer",
+      "title": "GitHub - Doriandarko/claude-engineer: Claude Engineer is an interactive command-line interface (CLI) that leverages the power of Anthropic's Claude-3.5-Sonnet model to assist with software development tasks.This framework enables Claude to generate and manage its own tools, continuously expanding its capabilities through conversation. Available both as a CLI and a modern web interface",
+      "summary": "Claude Engineer is an interactive command-line interface (CLI) that leverages the power of Anthropic&#39;s Claude-3.5-Sonnet model to assist with software development tasks.This framework enables C...",
+      "language": "en"
+    },
+    {
+      "id": "dcbe7b801b1516a4",
+      "url": "https://githubnext.com/projects/copilot-workspace",
+      "title": "GitHub Next | Copilot Workspace",
+      "summary": "GitHub Next Project: An agentic dev environment, designed for everyday tasks.",
+      "language": "en"
+    },
+    {
+      "id": "26550279b76ea62c",
+      "url": "https://sweep.dev/",
+      "title": "Sweep: The Best AI Assistant for JetBrains IDEs",
+      "summary": "Sweep is the best AI assistant for JetBrains.",
+      "language": "en"
+    },
+    {
+      "id": "12faeacefa7b969f",
+      "url": "https://thinks.lol/",
+      "title": "thinks.lol",
+      "summary": "thoughts, laughing. thinks about thinking.",
+      "language": "en-us"
+    },
+    {
+      "id": "15cd85fdd0a91f0d",
+      "url": "https://aider.chat/",
+      "title": "Aider - AI Pair Programming in Your Terminal",
+      "summary": "Aider lets you pair program with LLMs to start\n                        a new project or build on your existing\n                        codebase.",
+      "language": "en"
+    },
+    {
+      "id": "d164b54a2b791508",
+      "url": "https://nocruft.com/",
+      "title": "Navigating software programming jungles since 1978",
+      "summary": "Ryan Kanno is a software engineer based out of Honolulu, Hawaii. Welcome to his little abode on the Interwebs.",
+      "authors": [
+        {
+          "name": "Ryan Kanno"
+        }
+      ],
+      "language": "en"
+    },
+    {
+      "id": "fa909297d767d75e",
+      "url": "https://github.com/simonw/LLM",
+      "title": "GitHub - simonw/llm: Access large language models from the command-line",
+      "summary": "Access large language models from the command-line - simonw/llm",
+      "language": "en"
+    },
+    {
+      "id": "f41b50f00d0234eb",
+      "url": "https://gist.githubusercontent.com/blessanm86/6879d03782ecf350e7b1f683b4e51e8f/raw/ee31473bdabbc8b98d89101158a9e0c20e4ec4fd/german-driving-license.md"
+    },
+    {
+      "id": "f9f079a5ee46a251",
+      "url": "https://www.youtube.com/watch?v=wVm6f4TlZJc&si=8XgR7aLk-bBPfbgC",
+      "title": "Finding Motivation in Grad School & Writing LAST Post-Doc App | Day in the Life of PhD Student VLOG",
+      "summary": "If you ever wondered HOW TO STAY MOTIVATED while in grad school, today in this PhD Vlog I am talking about just that! As I finish writing my LAST Post-doc ap...",
+      "authors": [
+        {
+          "name": "Brisa Marie - Future PhD"
+        }
+      ],
+      "tags": [
+        "video",
+        "youtube"
+      ],
+      "attachments": [
+        {
+          "url": "https://i.ytimg.com/vi/wVm6f4TlZJc/maxresdefault.jpg",
+          "mime_type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8b2be142ee2e7734",
+      "url": "https://www.youtube-nocookie.com/embed/wVm6f4TlZJc",
+      "title": "YouTube",
+      "language": "de"
+    },
+    {
+      "id": "61662264d50ac000",
+      "url": "https://www.files.ethz.ch/isn/195099/rp_121.pdf"
+    },
+    {
+      "id": "3fea5085ad0bc272",
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html",
+      "title": "Understanding Spec-Driven-Development: Kiro, spec-kit, and Tessl",
+      "summary": "Notes from my Thoughtworks colleagues on AI-assisted software delivery"
+    },
+    {
+      "id": "0ebb4ff07afd2f54",
+      "url": "https://www.youtube-nocookie.com/embed/EOX6PAFMy3Y",
+      "title": "YouTube",
+      "language": "de"
+    },
+    {
+      "id": "2b297e813c1b61ae",
+      "url": "https://www.youtube.com/watch?v=EOX6PAFMy3Y&si=8Jp15r2KlGzs4eEd",
+      "title": "How to Read & Take Notes Like a PhD Student | Tips for Reading Fast & Efficiently for Slow Readers",
+      "summary": "✨ Check Out NOTION for all your Note-Taking, Project Management, and Organizational Needs: https://ntn.so/theredheadacademic+Check Out My Free Notion Templat...",
+      "authors": [
+        {
+          "name": "Kaelyn Grace Apple | TheRedHeadHistorian"
+        }
+      ],
+      "tags": [
+        "video",
+        "youtube"
+      ],
+      "attachments": [
+        {
+          "url": "https://i.ytimg.com/vi/EOX6PAFMy3Y/maxresdefault.jpg",
+          "mime_type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "9f0e78031b5df118",
+      "url": "https://engineering.block.xyz/blog/blocks-playbook-for-designing-mcp-servers",
+      "title": "Block's Playbook for Designing MCP Servers",
+      "summary": "Block's best practices, common pitfalls, and actionable examples for designing high quality MCP servers.",
+      "authors": [
+        {
+          "name": "Salman Mohammed, Kalvin Chau"
+        }
+      ],
+      "language": "en"
+    },
+    {
+      "id": "225dd8dc641cdbc5",
+      "url": "https://www.york.ac.uk/news-and-events/news/",
+      "title": "News - News and events, University of York",
+      "summary": "Top news stories from the University of York",
+      "language": "en"
+    },
+    {
+      "id": "d1f1e55fe89b0719",
+      "url": "https://www.york.ac.uk/news-and-events/features/",
+      "title": "Features",
+      "summary": "In these features, we highlight some of the diverse work being undertaken at the University.",
+      "authors": [
+        {
+          "name": "University of York"
+        }
+      ],
+      "language": "en-GB"
+    },
+    {
+      "id": "c9a0d8eac5d92e99",
+      "url": "https://www.york.ac.uk/news-and-events/for-media/",
+      "title": "Press Office contacts - News and events, University of York",
+      "summary": "Information for journalists, including contact and ISDN line details, and a Guide to Expertise.",
+      "language": "en"
+    },
+    {
+      "id": "ada3bd36901a4f0c",
+      "url": "https://www.york.ac.uk/news-and-events/",
+      "title": "News and events - News and events, University of York",
+      "summary": "News and events at the University of York",
+      "language": "en"
+    },
+    {
+      "id": "eda68bcb84c8d71e",
+      "url": "https://www.york.ac.uk/news-and-events/events/",
+      "title": "Events - News and events, University of York",
+      "summary": "Upcoming events at the University of York",
+      "language": "en"
+    },
+    {
+      "id": "e593a8973d922881",
+      "url": "https://www.york.ac.uk/news-and-events/news/2024/research/school-smartphone-ban-better-sleep/",
+      "title": "School smartphone ban results in better sleep and improved mood",
+      "summary": "Psychologists at the University of York, who tested the impact that smartphones have on children’s behaviour for a new two-part documentary series for Channel 4, found that a ban in school impacted positively on sleep and mood.",
+      "language": "en"
+    },
+    {
+      "id": "960c543dd9dc49aa",
+      "url": "https://www.york.ac.uk/psychology/",
+      "title": "Psychology - Psychology, University of York",
+      "summary": "Website of the Department of Psychology at the University of York",
+      "language": "en"
+    },
+    {
+      "id": "3784b1086998f156",
+      "url": "https://openai.github.io/openai-agents-python/",
+      "title": "OpenAI Agents SDK",
+      "summary": "TheOpenAI Agents SDKenables you to build agentic AI apps in a lightweight, easy-to-use package with very few abstractions. It's a production-ready upgrade of our previous experimentation for agents,Swarm. The Agents SDK has a very small set of primitives:",
+      "language": "en"
+    },
+    {
+      "id": "62194062c8ecab4a",
+      "url": "https://atomreddit.com/download/android/",
+      "title": "Atom for Reddit",
+      "summary": "Fast, Lightweight, Minimalistic!"
+    },
+    {
+      "id": "51684bf29a3c0c38",
+      "url": "https://barcelona-declaration.org/",
+      "title": "Barcelona Declaration on Open Research Information",
+      "summary": "Latest updates\n\n\n\n\n\n\n\n\nBlog post: Open funder metadata is essential for true research transparency - read more\n\n\nWebinar: Open Research Information in Action - Institutional Journeys Toward Open Systems - December 4, 2025 15:00-1630 CET - read more\n\n\n\n\n\n\n\nAbout the Declaration\n\n\n\n\n\n\nThe research information landscape requires fundamental change. The signatories of the Barcelona Declaration on Open Research Information commit to taking a lead in transforming the way research information is used a",
+      "language": "en"
+    },
+    {
+      "id": "765475be78b6838d",
+      "url": "https://zenodo.org/communities/wooc2025/records",
+      "title": "Search Proceedings of the Workshop on Open Citations and Open Scholarly Metadata 2025",
+      "summary": "Info:Zenodo’s user support line is staffed on regular business days between Dec 22 and Jan 4. Response times may be slightly longer than normal.",
+      "language": "en"
+    },
+    {
+      "id": "1262893e165655a5",
+      "url": "https://docs.google.com/document/d/1nYbtCmGiyDdpDDzL0ZrWCoxXG-AXcK1fNzC6jNxDQEw/edit",
+      "title": "Bologna Hotels",
+      "summary": "Hotels in Bologna       HOTEL UNIVERSITY A three-stars hotel located in the college area of the city, close to the University of Bologna. Average daily rate:  Single room: €80/100 + tourist tax Double room: €100/120 + tourist tax  Address: Via Mentana, 7, 40126 Bologna Phone: +39 051 229713 | ...",
+      "language": "de"
+    },
+    {
+      "id": "a9018136ce5de00e",
+      "url": "https://barcelona-declaration.org/conference/",
+      "title": "https://barcelona-declaration.org/conference_2024_paris/",
+      "language": "en-us"
+    },
+    {
+      "id": "ac1eff3e72d1e40e",
+      "url": "https://workshop-oc.github.io/",
+      "title": "Workshop on Open Citations",
+      "summary": "We invite to the Workshop Citations and Open Scholarly Metadata (WOOC) researchers, scholarly publishers, funders, policy makers, institutions, and open citations advocates, interested in the widespread adoption of practises for creation, sharing, reuse and improvement of open scholarly metadata.",
+      "language": "en"
+    },
+    {
+      "id": "ba05ed0273cf5529",
+      "url": "https://www.youtube.com/watch?v=ObBreSoNzZY&feature=youtu.be",
+      "title": "Bologna, where every day is special.",
+      "summary": "Bologna is told in a compelling new promotional video produced by the Settore Turismo to Comune di Bologna and produced by Giostra Film. The 20 minute video ...",
+      "authors": [
+        {
+          "name": "Bologna Welcome"
+        }
+      ],
+      "tags": [
+        "video",
+        "youtube"
+      ],
+      "attachments": [
+        {
+          "url": "https://i.ytimg.com/vi/ObBreSoNzZY/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGHIgQyg9MA8=&rs=AOn4CLD3wCYDgA-q04J0NOqweIFTx_fbfg",
+          "mime_type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "00f9e09c83565147",
+      "url": "https://workshop-oc.github.io/images/group_1.jpg"
+    },
+    {
+      "id": "c6c1bfcbca5326d6",
+      "url": "https://www.marconiexpress.it/",
+      "title": "Marconi Express | Veloce, frequente, comodo, elettrico",
+      "summary": "Dall'aeroporto alla stazione centrale e al centro di Bologna, andata e ritorno, dalle 5:40 alle 24:00",
+      "language": "it-IT"
+    },
+    {
+      "id": "3b7802077640461e",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScc3QIWG90tDqIGCs2JryNpeawZDP1lTAnhpTw9Qydb965WxQ/closedform",
+      "title": "Apply for WOOC2025",
+      "summary": "Apply now to participate in the Workshop on Open Citations and Open Scholarly Metadata 2025  (including the Bologna Meeting on Open Research Information) ! \nPlease provide the requested information and a short bio. \nThe organizers will evaluate your application and you will then receive a notification of acceptance. In case of oversubscriptions, the organisers will select attendees from among those who have applied.\nEXTENDED APPLICATION DEADLINE: 31 January 2025\nNotification of acceptance (if yo"
+    },
+    {
+      "id": "15593d8d3e16c0fa",
+      "url": "https://colorslurp.com/",
+      "title": "ColorSlurp · Pick, edit, and copy colors with the best color picker for Mac and iOS!",
+      "summary": "Pick, edit, and copy colors with the best color picker for Mac and iOS!",
+      "authors": [
+        {
+          "name": "IdeaPunch, LLC."
+        }
+      ],
+      "language": "en-US"
+    },
+    {
+      "id": "fac81a26d72d0ad2",
+      "url": "https://www.gutenberg.org/files/1636/1636-h/1636-h.htm",
+      "title": "Phaedrus, by Plato",
+      "language": "en"
+    },
+    {
+      "id": "8d055a36521ae207",
+      "url": "https://f-droid.org/en/packages/org.piepmeyer.gauguin/",
+      "title": "Gauguin | F-Droid - Free and Open Source Android App Repository",
+      "summary": "A Sudoku-like logic game",
+      "language": "en"
+    },
+    {
+      "id": "eb785faf6cd247eb",
+      "url": "https://newsletter.pragmaticengineer.com/p/how-claude-code-is-built",
+      "title": "How Claude Code is built",
+      "summary": "A rare look into how the new, popular dev tool is built, and what it might mean for the future of software building with AI. Exclusive.",
+      "authors": [
+        {
+          "name": "Gergely Orosz"
+        }
+      ],
+      "language": "en"
+    },
+    {
+      "id": "db7de255d22b24e1",
+      "url": "https://www.vox.com/policy-and-politics/2020/1/16/20991816/impeachment-trial-trump-bannon-misinformation",
+      "title": "“Flood the zone with shit”: How misinformation overwhelmed our democracy",
+      "summary": "The impeachment trial didn’t change any minds. Here’s why.",
+      "authors": [
+        {
+          "name": "Sean Illing"
+        }
+      ],
+      "language": "en-US"
+    },
+    {
+      "id": "d503a60a16473019",
+      "url": "https://show-your.work/en/latest/overleaf/",
+      "title": "Overleaf integration — showyourwork",
+      "language": "en"
+    },
+    {
+      "id": "4790cc41be6e650f",
+      "url": "https://malsalon.de/workshopsall/kategorie/studio/",
+      "title": "Anstehende Workshops: Studio | Malsalon Berlin",
+      "summary": "Jeder ist ein Künstler",
+      "language": "de"
+    },
+    {
+      "id": "6d08a45aada20499",
+      "url": "https://en.wikipedia.org/wiki/News",
+      "title": "News - Wikipedia",
+      "language": "en"
+    },
+    {
+      "id": "63e0a72c485230af",
+      "url": "https://apastyle.apa.org/blog/how-to-cite-chatgpt"
+    },
+    {
+      "id": "e65971b76cf6c468",
+      "url": "https://github.com/katzper-michno/overleaf-sync-rs",
+      "title": "GitHub - katzper-michno/overleaf-sync-rs: CLI for synchronizing LaTeX projects between Overleaf and your local machine",
+      "summary": "CLI for synchronizing LaTeX projects between Overleaf and your local machine - katzper-michno/overleaf-sync-rs",
+      "language": "en"
+    }
+  ]
+}
