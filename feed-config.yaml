@@ -12,6 +12,17 @@ global_blacklist:
 
 feeds:
 
+  - name: trello
+    feed:
+      title: "Trello links"
+      description: "Links from Trello board"
+      home_page_url: "https://kjgarza.github.io/linkfeed/"
+    trello:
+      file: "./docs/Learning.json"
+      lists:  # Optional: filter by list IDs
+        - "64f46d5d347f9e0a1ba4432b"
+
+
   # Feed from static sources
   - name: toreadlater
     feed:
@@ -19,12 +30,6 @@ feeds:
       home_page_url: "https://kjgarza.github.io/linkfeed/"
       feed_url: "https://kjgarza.github.io/linkfeed/feed.json"
       description: "Links I find interesting"
-    markdown_dir: "./../../notes/scratchpad/ReadItLater"
+    markdown_dir: "./../notes/scratchpad/ReadItLater"
 
 
-  - name: anthropic-engineering
-    feed:
-      title: "Anthropic Engineering"
-      description: "Anthropic's engineering blog"
-      home_page_url: "https://www.anthropic.com/engineering"
-    website: "https://www.anthropic.com/engineering"

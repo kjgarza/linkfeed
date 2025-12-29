@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Anthropic Engineering</title>
+    <link>https://www.anthropic.com/engineering</link>
+    <description>Anthropic's engineering blog</description>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <lastBuildDate>Mon, 29 Dec 2025 08:06:37 +0000</lastBuildDate>
+    <item>
+      <title>Contextual Retrieval in AI Systems</title>
+      <link>https://www.anthropic.com/engineering/contextual-retrieval</link>
+      <description>Explore how Anthropic enhances AI systems through advanced contextual retrieval methods. Learn about our approach to improving information access and relevance in large language models.</description>
+      <guid isPermaLink="false">33d81116743596d4</guid>
+      <category>contextual</category>
+      <category>engineering</category>
+      <category>retrieval</category>
+      <category>knowledge</category>
+      <category>ai</category>
+      <pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Building Effective AI Agents</title>
+      <link>https://www.anthropic.com/engineering/building-effective-agents</link>
+      <description>Discover how Anthropic approaches the development of reliable AI agents. Learn about our research on agent capabilities, safety considerations, and technical framework for building trustworthy AI.</description>
+      <guid isPermaLink="false">ffc229d83891918f</guid>
+      <category>architecture</category>
+      <category>engineering</category>
+      <category>llm</category>
+      <category>composable</category>
+      <category>agents</category>
+      <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude SWE-Bench Performance</title>
+      <link>https://www.anthropic.com/engineering/swe-bench-sonnet</link>
+      <description>Explore Claude's breakthrough performance on SWE-Bench, demonstrating advanced software engineering capabilities and code generation accuracy. Learn about our technical evaluation methods.</description>
+      <guid isPermaLink="false">43d7916975114d60</guid>
+      <category>model</category>
+      <category>engineering</category>
+      <category>benchmark</category>
+      <category>software</category>
+      <category>ai</category>
+      <pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>The "think" tool: Enabling Claude to stop and think</title>
+      <link>https://www.anthropic.com/engineering/claude-think-tool</link>
+      <description>A blog post for developers, describing a new method for complex tool-use situations</description>
+      <guid isPermaLink="false">4d418dad93eb839e</guid>
+      <category>problem-solving</category>
+      <category>development</category>
+      <category>tool</category>
+      <category>engineering</category>
+      <category>ai</category>
+      <pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude Code Best Practices</title>
+      <link>https://www.anthropic.com/engineering/claude-code-best-practices</link>
+      <description>A blog post covering tips and tricks that have proven effective for using Claude Code across various codebases, languages, and environments.</description>
+      <guid isPermaLink="false">b77235353457c81e</guid>
+      <category>coding</category>
+      <category>best-practices</category>
+      <category>tools</category>
+      <category>engineering</category>
+      <category>ai</category>
+      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>How we built our multi-agent research system</title>
+      <link>https://www.anthropic.com/engineering/multi-agent-research-system</link>
+      <description>On the the engineering challenges and lessons learned from building Claude's Research system</description>
+      <guid isPermaLink="false">a3afc1e8c7c23916</guid>
+      <category>system-design</category>
+      <category>multi-agent</category>
+      <category>engineering</category>
+      <category>research</category>
+      <category>ai</category>
+      <pubDate>Fri, 13 Jun 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude Desktop Extensions: One-click MCP server installation for Claude Desktop</title>
+      <link>https://www.anthropic.com/engineering/desktop-extensions</link>
+      <description>Claude Desktop Extensions: One-click MCP server installation for Claude Desktop</description>
+      <guid isPermaLink="false">bb4c60b19b246a2f</guid>
+      <category>installation</category>
+      <category>mcp</category>
+      <category>engineering</category>
+      <category>developers</category>
+      <category>desktop-extensions</category>
+      <pubDate>Thu, 26 Jun 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Writing effective tools for AI agents—using AI agents</title>
+      <link>https://www.anthropic.com/engineering/writing-tools-for-agents</link>
+      <description>Writing effective tools for AI agents—using AI agents</description>
+      <guid isPermaLink="false">1399aec680791f78</guid>
+      <category>tools</category>
+      <category>performance</category>
+      <category>engineering</category>
+      <category>agents</category>
+      <category>ai</category>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>A postmortem of three recent issues</title>
+      <link>https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues</link>
+      <description>This is a technical report on three bugs that intermittently degraded responses from Claude. Below we explain what happened, why it took time to fix, and what we're changing.</description>
+      <guid isPermaLink="false">955bc6c93f35e54a</guid>
+      <category>report</category>
+      <category>bugs</category>
+      <category>engineering</category>
+      <category>infrastructure</category>
+      <category>technical</category>
+      <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Effective context engineering for AI agents</title>
+      <link>https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents</link>
+      <description>Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.</description>
+      <guid isPermaLink="false">126e07cf0d684e03</guid>
+      <category>engineering</category>
+      <category>llm</category>
+      <category>prompt-engineering</category>
+      <category>context</category>
+      <category>ai</category>
+      <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Building agents with the Claude Agent SDK</title>
+      <link>https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk</link>
+      <description>How to get started with the Claude Agent SDK and best practices for using it.</description>
+      <guid isPermaLink="false">cf56e2618a633525</guid>
+      <category>coding</category>
+      <category>development</category>
+      <category>engineering</category>
+      <category>agents</category>
+      <category>sdk</category>
+      <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Equipping agents for the real world with Agent Skills</title>
+      <link>https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills</link>
+      <description>Discover how Anthropic builds AI agents with practical capabilities through modular skills, enabling them to handle complex real-world tasks more effectively and reliably.</description>
+      <guid isPermaLink="false">2e50ab69ebea3b2c</guid>
+      <category>procedural-knowledge</category>
+      <category>skills</category>
+      <category>engineering</category>
+      <category>agents</category>
+      <category>ai</category>
+      <pubDate>Thu, 16 Oct 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Making Claude Code more secure and autonomous with sandboxing</title>
+      <link>https://www.anthropic.com/engineering/claude-code-sandboxing</link>
+      <description>Learn how Claude Code's new sandboxing feature protects developers with filesystem and network isolation, reducing permission prompts and increasing user safety.</description>
+      <guid isPermaLink="false">c765441e9673d957</guid>
+      <category>autonomy</category>
+      <category>sandboxing</category>
+      <category>development</category>
+      <category>engineering</category>
+      <category>security</category>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Code execution with MCP: building more efficient AI agents</title>
+      <link>https://www.anthropic.com/engineering/code-execution-with-mcp</link>
+      <description>Learn how code execution with the Model Context Protocol enables agents to handle more tools while using fewer tokens, reducing context overhead by up to 98.7%.</description>
+      <guid isPermaLink="false">9b88bfec4a46afeb</guid>
+      <category>integration</category>
+      <category>mcp</category>
+      <category>engineering</category>
+      <category>agents</category>
+      <category>ai</category>
+      <pubDate>Tue, 04 Nov 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Introducing advanced tool use on the Claude Developer Platform</title>
+      <link>https://www.anthropic.com/engineering/advanced-tool-use</link>
+      <description>Claude can now discover, learn, and execute tools dynamically to enable agents that take action in the real world. Here’s how.</description>
+      <guid isPermaLink="false">eafa6e2f9f229d66</guid>
+      <category>tools</category>
+      <category>development</category>
+      <category>orchestration</category>
+      <category>agents</category>
+      <category>ai</category>
+      <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Effective harnesses for long-running agents</title>
+      <link>https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents</link>
+      <description>Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.</description>
+      <guid isPermaLink="false">7f7a70a676497580</guid>
+      <category>engineering</category>
+      <category>agents</category>
+      <category>sdk</category>
+      <category>context</category>
+      <category>ai</category>
+      <pubDate>Wed, 26 Nov 2025 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

@@ -38,7 +38,7 @@ htmlcov/
 
 # Generated feeds
 feed.json
-feed.xml
+# feed.xml
 .env
 
 docs/
