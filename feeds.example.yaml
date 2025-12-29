@@ -1,6 +1,11 @@
 # Example multi-feed configuration for linkfeed
 # Use with: linkfeed --config feeds.yaml --multi --generate-site
 
+# Global whitelist applied to all feeds (optional)
+global_whitelist:
+  - "*.github.com"
+  - "example.com"
+
 # Global blacklist applied to all feeds
 global_blacklist:
   - "*.tracking.com"
@@ -15,6 +20,9 @@ feeds:
       home_page_url: "https://example.com/tech"
       language: "en"
     website: "https://news.ycombinator.com"
+    whitelist:
+      - "*.ycombinator.com"
+      - "github.com"
     blacklist:
       - "*.reddit.com"
 

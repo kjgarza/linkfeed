@@ -10,6 +10,10 @@ global_blacklist:
   - "*.jira.com"
   - "https://news.ycombinator.com/*"
 
+
+global_whitelist:
+  - "https://www.anthropic.com/engineering/*"
+
 feeds:
 
   - name: anthropic-engineering

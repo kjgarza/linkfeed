@@ -2,8 +2,8 @@ name: Generate Feeds
 
 on:
   schedule:
-    # Run daily at midnight UTC
-    - cron: '0 0 * * *'
+    # Run weekly on Sunday at midnight UTC
+    - cron: '0 0 * * 0'
   workflow_dispatch:
     inputs:
       generate_tags:

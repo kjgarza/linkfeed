@@ -29,6 +29,7 @@ class SingleFeedConfig(BaseModel):
     feed: FeedConfig = Field(default_factory=FeedConfig)
     sources: list[str] = Field(default_factory=list)
     blacklist: list[str] = Field(default_factory=list)
+    whitelist: list[str] = Field(default_factory=list)
     website: Optional[str] = None  # URL to scrape for links
     markdown_dir: Optional[str] = None  # Directory to scan for markdown files
     trello: Optional[TrelloSource] = None  # Trello board source
@@ -41,6 +42,7 @@ class NamedFeedConfig(BaseModel):
     feed: FeedConfig = Field(default_factory=FeedConfig)
     sources: list[str] = Field(default_factory=list)
     blacklist: list[str] = Field(default_factory=list)
+    whitelist: list[str] = Field(default_factory=list)
     website: Optional[str] = None
     markdown_dir: Optional[str] = None
     trello: Optional[TrelloSource] = None
@@ -52,6 +54,7 @@ class MultiConfig(BaseModel):
 
     feeds: list[NamedFeedConfig] = Field(default_factory=list)
     global_blacklist: list[str] = Field(default_factory=list)  # Applied to all feeds
+    global_whitelist: list[str] = Field(default_factory=list)  # Applied to all feeds
 
 
 # Alias for backward compatibility
@@ -86,6 +89,7 @@ def load_config(path: Path) -> SingleFeedConfig:
         feed=feed_config,
         sources=data.get("sources", []),
         blacklist=data.get("blacklist", []),
+        whitelist=data.get("whitelist", []),
         website=data.get("website"),
         markdown_dir=data.get("markdown_dir"),
         trello=trello,
@@ -125,6 +129,7 @@ def load_multi_config(path: Path) -> MultiConfig:
             feed=FeedConfig(**feed_meta),
             sources=feed_data.get("sources", []),
             blacklist=feed_data.get("blacklist", []),
+            whitelist=feed_data.get("whitelist", []),
             website=feed_data.get("website"),
             markdown_dir=feed_data.get("markdown_dir"),
             trello=trello,
@@ -134,6 +139,7 @@ def load_multi_config(path: Path) -> MultiConfig:
     return MultiConfig(
         feeds=feeds,
         global_blacklist=data.get("global_blacklist", []),
+        global_whitelist=data.get("global_whitelist", []),
     )
 
 
@@ -153,6 +159,7 @@ def load_config_dir(config_dir: Path) -> MultiConfig:
                 feed=single.feed,
                 sources=single.sources,
                 blacklist=single.blacklist,
+                whitelist=single.whitelist,
                 website=single.website,
             ))
         except ValueError:

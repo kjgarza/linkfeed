@@ -26,6 +26,7 @@ from linkfeed.models import FeedItem
 from linkfeed.parsers import get_parser
 from linkfeed.site import generate_index_html
 from linkfeed.utils.blacklist import filter_blacklisted
+from linkfeed.utils.whitelist import filter_whitelisted
 from linkfeed.utils.markdown import scan_markdown_directory
 from linkfeed.utils.network import create_session, fetch_url
 from linkfeed.utils.scraper import scrape_website_links
@@ -162,7 +163,7 @@ async def process_urls(
 )
 @click.option(
     "--website",
-    "-w",
+    "-W",
     "website_url",
     type=str,
     help="Scrape website for article links",
@@ -210,6 +211,13 @@ async def process_urls(
     help="Additional blacklist pattern (repeatable)",
 )
 @click.option(
+    "--whitelist",
+    "-w",
+    "whitelist_patterns",
+    multiple=True,
+    help="Additional whitelist pattern (repeatable)",
+)
+@click.option(
     "--concurrency",
     "-C",
     type=int,
@@ -227,6 +235,12 @@ async def process_urls(
     type=str,
     default=DEFAULT_MODEL,
     help=f"OpenAI model for tag generation (default: {DEFAULT_MODEL})",
+)
+@click.option(
+    "--rebuild",
+    "-R",
+    is_flag=True,
+    help="Rebuild feed from scratch (discard existing feed)",
 )
 @click.option(
     "--dry-run",
@@ -259,9 +273,11 @@ def main(
     multi_config: bool,
     generate_site: bool,
     blacklist_patterns: tuple[str, ...],
+    whitelist_patterns: tuple[str, ...],
     concurrency: int,
     generate_tags: bool,
     openai_model: str,
+    rebuild: bool,
     dry_run: bool,
     verbose: bool,
     quiet: bool,
@@ -278,7 +294,8 @@ def main(
     if multi_config:
         _run_multi_feed(
             config_path, output_dir or Path("feeds"), generate_site,
-            concurrency, generate_tags, openai_model, dry_run, logger
+            concurrency, generate_tags, openai_model, rebuild, dry_run, logger,
+            list(whitelist_patterns)
         )
         return
 
@@ -361,19 +378,29 @@ def main(
             f"Skipped {len(all_urls) - len(valid_urls)} invalid URLs"
         )
 
-    # Apply blacklist
-    blacklist = list(config.blacklist) + list(blacklist_patterns)
-    filtered_urls = filter_blacklisted(valid_urls, blacklist)
-    if len(filtered_urls) < len(valid_urls):
+    # Apply whitelist first
+    whitelist = list(config.whitelist) + list(whitelist_patterns)
+    whitelisted_urls = filter_whitelisted(valid_urls, whitelist)
+    if len(whitelisted_urls) < len(valid_urls):
         logger.info(
-            f"Filtered {len(valid_urls) - len(filtered_urls)} blacklisted URLs"
+            f"Filtered {len(valid_urls) - len(whitelisted_urls)} non-whitelisted URLs"
         )
 
-    # Read existing feed for deduplication
-    existing_feed = read_existing_feed(json_out)
+    # Apply blacklist
+    blacklist = list(config.blacklist) + list(blacklist_patterns)
+    filtered_urls = filter_blacklisted(whitelisted_urls, blacklist)
+    if len(filtered_urls) < len(whitelisted_urls):
+        logger.info(
+            f"Filtered {len(whitelisted_urls) - len(filtered_urls)} blacklisted URLs"
+        )
+
+    # Read existing feed for deduplication (unless rebuilding)
+    existing_feed = None if rebuild else read_existing_feed(json_out)
     deduplicator = URLDeduplicator()
 
-    if existing_feed:
+    if rebuild:
+        logger.info("Rebuilding feed from scratch (existing feed discarded)")
+    elif existing_feed:
         deduplicator.add_existing_ids([item.id for item in existing_feed.items])
         logger.info(f"Loaded {len(existing_feed.items)} existing items")
 
@@ -385,10 +412,13 @@ def main(
             unique_urls.append(url)
 
     if not unique_urls:
-        click.echo("No new URLs to process")
+        if rebuild:
+            click.echo("No URLs to process for rebuild")
+        else:
+            click.echo("No new URLs to process")
         sys.exit(0)
 
-    logger.info(f"Processing {len(unique_urls)} new URLs (concurrency: {concurrency})")
+    logger.info(f"Processing {len(unique_urls)} URLs (concurrency: {concurrency})")
 
     # Process URLs concurrently
     new_items = asyncio.run(
@@ -418,7 +448,10 @@ def main(
 
     # Output
     if dry_run:
-        click.echo(f"Would add {len(new_items)} new items to feed")
+        if rebuild:
+            click.echo(f"Would rebuild feed with {len(new_items)} items")
+        else:
+            click.echo(f"Would add {len(new_items)} new items to feed")
         for item in new_items:
             click.echo(f"  - {item.title or item.url}")
     else:
@@ -429,9 +462,12 @@ def main(
             generate_rss(merged_feed, rss_out)
             logger.info(f"Wrote RSS to {rss_out}")
 
-            click.echo(
-                f"Added {len(new_items)} items (total: {len(merged_feed.items)})"
-            )
+            if rebuild:
+                click.echo(f"Rebuilt feed with {len(merged_feed.items)} items")
+            else:
+                click.echo(
+                    f"Added {len(new_items)} items (total: {len(merged_feed.items)})"
+                )
         except IOError as e:
             click.echo(f"Error writing output: {e}", err=True)
             sys.exit(1)
@@ -450,8 +486,10 @@ def _run_multi_feed(
     concurrency: int,
     do_generate_tags: bool,
     openai_model: str,
+    rebuild: bool,
     dry_run: bool,
     logger: logging.Logger,
+    cli_whitelist: list[str] = None,
 ) -> None:
     """Process multiple feeds from a multi-feed config."""
     try:
@@ -509,18 +547,26 @@ def _run_multi_feed(
             logger.warning(f"  No URLs for feed {feed_config.name}")
             continue
 
+        # Apply whitelists (feed-level, global, and CLI)
+        whitelist = list(feed_config.whitelist) + list(multi.global_whitelist)
+        if cli_whitelist:
+            whitelist.extend(cli_whitelist)
+        whitelisted_urls = filter_whitelisted(all_urls, whitelist)
+
         # Apply blacklists
         blacklist = list(feed_config.blacklist) + list(multi.global_blacklist)
-        filtered_urls = filter_blacklisted(all_urls, blacklist)
+        filtered_urls = filter_blacklisted(whitelisted_urls, blacklist)
         valid_urls = [u for u in filtered_urls if is_valid_url(u)]
 
-        # Read existing feed
+        # Read existing feed (unless rebuilding)
         json_out = feed_output_dir / "feed.json"
         rss_out = feed_output_dir / "feed.xml"
-        existing_feed = read_existing_feed(json_out)
+        existing_feed = None if rebuild else read_existing_feed(json_out)
 
         deduplicator = URLDeduplicator()
-        if existing_feed:
+        if rebuild:
+            logger.info(f"  Rebuilding {feed_config.name} from scratch")
+        elif existing_feed:
             deduplicator.add_existing_ids([item.id for item in existing_feed.items])
 
         unique_urls = []
@@ -530,7 +576,10 @@ def _run_multi_feed(
                 unique_urls.append(url)
 
         if not unique_urls:
-            logger.info(f"  No new URLs for {feed_config.name}")
+            if rebuild:
+                logger.info(f"  No URLs to process for {feed_config.name}")
+            else:
+                logger.info(f"  No new URLs for {feed_config.name}")
             continue
 
         logger.info(f"  Processing {len(unique_urls)} URLs")
@@ -559,9 +608,15 @@ def _run_multi_feed(
             feed_output_dir.mkdir(parents=True, exist_ok=True)
             write_json_feed(merged_feed, json_out)
             generate_rss(merged_feed, rss_out)
-            logger.info(f"  Wrote {len(new_items)} new items to {feed_output_dir}")
+            if rebuild:
+                logger.info(f"  Rebuilt {feed_config.name} with {len(merged_feed.items)} items")
+            else:
+                logger.info(f"  Wrote {len(new_items)} new items to {feed_output_dir}")
         else:
-            click.echo(f"  Would add {len(new_items)} items to {feed_config.name}")
+            if rebuild:
+                click.echo(f"  Would rebuild {feed_config.name} with {len(new_items)} items")
+            else:
+                click.echo(f"  Would add {len(new_items)} items to {feed_config.name}")
 
     # Generate static site index
     if generate_site and not dry_run:
