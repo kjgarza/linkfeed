@@ -93,18 +93,9 @@ class GenericParser(BaseParser):
         # Extract content HTML
         content_html = article.get("plain_content")
 
-        # Extract summary from plain_text (first paragraph)
-        summary = None
+        # Extract summary from plain_text (best paragraph from first 4)
         plain_text = article.get("plain_text")
-        if plain_text and len(plain_text) > 0:
-            first_para = plain_text[0]
-            # plain_text is a list of dicts with 'text' key
-            if isinstance(first_para, dict):
-                text = first_para.get('text', '')
-                if text and len(text) > 20:
-                    summary = text[:500]
-            elif isinstance(first_para, str) and len(first_para) > 20:
-                summary = first_para[:500]
+        summary = self._extract_best_paragraph(plain_text)
 
         # Fall back to meta description if no summary
         if not summary:
@@ -209,13 +200,62 @@ class GenericParser(BaseParser):
 
         return None
 
+    def _extract_best_paragraph(self, plain_text: Optional[list]) -> Optional[str]:
+        """Extract the best paragraph from plain_text.
+        
+        Checks up to 4 paragraphs and returns the one with most content.
+        
+        Args:
+            plain_text: List of paragraphs (either dicts with 'text' key or strings)
+            
+        Returns:
+            The longest paragraph text (up to 500 chars) or None
+        """
+        if not plain_text or len(plain_text) == 0:
+            return None
+        
+        # Check up to 4 paragraphs
+        candidates = []
+        for i, para in enumerate(plain_text[:4]):
+            # Handle both dict and string formats
+            if isinstance(para, dict):
+                text = para.get('text', '')
+            elif isinstance(para, str):
+                text = para
+            else:
+                continue
+            
+            # Only consider paragraphs with meaningful content
+            if text and len(text) > 100:
+                candidates.append(text)
+        
+        # Return the longest paragraph
+        if candidates:
+            best = max(candidates, key=len)
+            return best[:500]
+        
+        return None
+    
     def _extract_first_paragraph(self, soup: BeautifulSoup) -> Optional[str]:
-        """Extract first paragraph as summary."""
-        first_p = soup.find("p")
-        if first_p:
-            text = first_p.get_text(strip=True)
-            if len(text) > 20:
-                return text[:500]
+        """Extract best paragraph from BeautifulSoup.
+        
+        Checks up to 4 paragraphs and returns the one with most content.
+        """
+        paragraphs = soup.find_all("p", limit=4)
+        if not paragraphs:
+            return None
+        
+        candidates = []
+        for p in paragraphs:
+            text = p.get_text(strip=True)
+            if len(text) > 100:
+                candidates.append(text)
+        
+        # Return the longest paragraph
+        if candidates:
+            best = max(candidates, key=len)
+            return best[:500]
+        
         return None
 
     def _extract_author(self, soup: BeautifulSoup) -> Optional[str]:

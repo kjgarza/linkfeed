@@ -16,6 +16,9 @@ uv pip install -e .
 # Process URLs directly
 linkfeed https://example.com/article1 https://example.com/article2
 
+# Rebuild feed from scratch (discard existing items)
+linkfeed --rebuild --config linkfeed.yaml
+
 # Scrape a website for article links
 linkfeed --website https://news.example.com
 
@@ -51,6 +54,12 @@ sources:
   - https://example.com/article1
   - https://example.com/article2
 
+# Optional: Only allow URLs from these domains
+whitelist:
+  - "example.com"
+  - "*.trusted.com"
+
+# Optional: Block specific patterns (applied after whitelist)
 blacklist:
   - "*.tracking.com"
   - "ads.example.com"
@@ -117,12 +126,19 @@ For managing multiple feeds, use the multi-feed format with `--multi` flag:
 global_blacklist:
   - "*.tracking.com"
 
+global_whitelist:
+  - "*.github.com"
+  - "example.com"
+
 feeds:
   - name: tech
     feed:
       title: "Tech News"
       description: "Technology articles"
     website: "https://news.ycombinator.com"
+    whitelist:
+      - "*.ycombinator.com"
+      - "github.com"
     blacklist:
       - "*.reddit.com"
 
@@ -159,19 +175,52 @@ feeds:
 | `-m, --from-markdown DIR` | Extract URLs from markdown files |
 | `-t, --from-trello FILE` | Parse Trello board JSON export |
 | `-L, --trello-list ID` | Filter Trello cards by list ID (repeatable) |
-| `-w, --website URL` | Scrape website for article links |
+| `-W, --website URL` | Scrape website for article links |
 | `-o, --output-dir PATH` | Output directory for feeds |
 | `-j, --json-out PATH` | JSON Feed output path (default: feed.json) |
 | `-r, --rss-out PATH` | RSS output path (default: feed.xml) |
 | `-M, --multi` | Process multi-feed config file |
 | `-S, --generate-site` | Generate static index.html for all feeds |
 | `-b, --blacklist PATTERN` | Blacklist pattern (repeatable) |
+| `-w, --whitelist PATTERN` | Whitelist pattern (repeatable) |
 | `-C, --concurrency N` | Concurrent requests (default: 10) |
 | `-g, --generate-tags` | Generate tags using OpenAI |
 | `--openai-model MODEL` | OpenAI model (default: gpt-4o-mini) |
+| `-R, --rebuild` | Rebuild feed from scratch (discard existing) |
 | `-n, --dry-run` | Preview without writing files |
 | `-v, --verbose` | Detailed logging |
 | `-q, --quiet` | Minimal output |
+
+## Feed Management
+
+### Incremental Updates (Default)
+
+By default, linkfeed appends new items to existing feeds without re-processing URLs that already exist. This is efficient for regular updates.
+
+```bash
+# First run - creates feed with 10 items
+linkfeed --config linkfeed.yaml
+
+# Second run - only adds new items
+linkfeed --config linkfeed.yaml
+```
+
+### Rebuild from Scratch
+
+Use the `--rebuild` flag to discard the existing feed and rebuild it completely from all sources. This is useful when:
+- You've modified parser logic and want to re-parse existing URLs
+- You want to refresh metadata for all items
+- You're testing new configurations
+
+```bash
+# Rebuild entire feed from scratch
+linkfeed --rebuild --config linkfeed.yaml
+
+# Rebuild all feeds in multi-feed mode
+linkfeed --rebuild --config feeds.yaml --multi
+```
+
+**Note:** The `--rebuild` flag processes all URLs from your sources, ignoring any existing feed data.
 
 ## Output
 
@@ -182,7 +231,7 @@ feeds:
 ## GitHub Actions
 
 For automated feed generation, see `.github/workflows/generate-feeds.yml`. It supports:
-- Daily scheduled runs
+- Weekly scheduled runs (Sundays at midnight UTC)
 - GitHub Pages deployment
 - Optional OpenAI tag generation (set `OPENAI_API_KEY` secret)
 
