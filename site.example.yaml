@@ -1,0 +1,5 @@
+# Site configuration for linkfeed index page
+# Place this file in your feeds/ directory to customize the site index
+
+title: "My Feed Collection"
+description: "A curated collection of RSS and JSON feeds"

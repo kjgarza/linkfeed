@@ -6,9 +6,20 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
+import yaml
+from pydantic import BaseModel
+
 from linkfeed.models import Feed
 
 logger = logging.getLogger(__name__)
+
+
+class SiteConfig(BaseModel):
+    """Configuration for site index page."""
+    
+    title: str = "Feed Index"
+    description: str = "A collection of RSS and JSON feeds"
+
 
 HTML_TEMPLATE = """<!DOCTYPE html>
 <html lang="en">
@@ -115,17 +126,24 @@ FEED_ITEM_TEMPLATE = """
 def generate_index_html(
     feeds_dir: Path,
     output_path: Path,
-    title: str = "Feed Index",
-    description: str = "A collection of RSS and JSON feeds",
+    title: Optional[str] = None,
+    description: Optional[str] = None,
 ) -> None:
     """Generate an index.html page listing all feeds.
 
     Args:
         feeds_dir: Directory containing feed subdirectories
         output_path: Path to write index.html
-        title: Site title
-        description: Site description
+        title: Site title (overrides config, defaults to "Feed Index")
+        description: Site description (overrides config, defaults to generic description)
     """
+    # Load site config (falls back to defaults)
+    config = _load_site_config(feeds_dir)
+    
+    # CLI args override config file
+    site_title = title or config.title
+    site_description = description or config.description
+    
     feed_items_html = []
     autodiscovery_links = []
 
@@ -169,8 +187,8 @@ def generate_index_html(
 
     # Generate HTML
     html = HTML_TEMPLATE.format(
-        title=_escape_html(title),
-        description=_escape_html(description),
+        title=_escape_html(site_title),
+        description=_escape_html(site_description),
         feed_items="".join(feed_items_html) if feed_items_html else "<li>No feeds found</li>",
         autodiscovery="\n    ".join(autodiscovery_links),
         generated_at=datetime.now().strftime("%Y-%m-%d %H:%M"),
@@ -180,6 +198,37 @@ def generate_index_html(
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(html, encoding="utf-8")
     logger.info(f"Generated index at {output_path}")
+
+
+def _load_site_config(feeds_dir: Path) -> SiteConfig:
+    """Load site configuration from feeds_dir/site.yaml.
+    
+    Falls back to defaults if file doesn't exist.
+    
+    Args:
+        feeds_dir: Directory to look for site.yaml
+        
+    Returns:
+        SiteConfig with loaded or default values
+    """
+    config_path = feeds_dir / "site.yaml"
+    
+    if not config_path.exists():
+        logger.debug(f"No site.yaml found at {config_path}, using defaults")
+        return SiteConfig()
+    
+    try:
+        with open(config_path, "r", encoding="utf-8") as f:
+            data = yaml.safe_load(f) or {}
+        
+        logger.debug(f"Loaded site config from {config_path}")
+        return SiteConfig(
+            title=data.get("title", SiteConfig().title),
+            description=data.get("description", SiteConfig().description),
+        )
+    except (yaml.YAMLError, IOError) as e:
+        logger.warning(f"Failed to load site.yaml: {e}, using defaults")
+        return SiteConfig()
 
 
 def _load_feed(path: Path) -> Optional[dict]:
@@ -198,8 +247,12 @@ def _get_last_updated(items: list[dict]) -> str:
         date_str = item.get("date_published") or item.get("date_modified")
         if date_str:
             try:
-                dates.append(datetime.fromisoformat(date_str.replace("Z", "+00:00")))
-            except ValueError:
+                dt = datetime.fromisoformat(date_str.replace("Z", "+00:00"))
+                # Convert to naive datetime for comparison (use UTC)
+                if dt.tzinfo is not None:
+                    dt = dt.replace(tzinfo=None)
+                dates.append(dt)
+            except (ValueError, AttributeError):
                 pass
 
     if dates:

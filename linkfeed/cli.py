@@ -37,6 +37,12 @@ from linkfeed.utils.url import URLDeduplicator, is_valid_url
 DEFAULT_CONCURRENCY = 10
 
 
+@click.group()
+def cli():
+    """linkfeed - Generate JSON Feed and RSS from URLs."""
+    pass
+
+
 def setup_logging(verbose: bool, quiet: bool) -> None:
     """Configure logging based on verbosity."""
     if quiet:
@@ -130,7 +136,80 @@ async def process_urls(
     return items
 
 
-@click.command()
+@cli.command(name="generate-site")
+@click.option(
+    "--feeds-dir",
+    "-f",
+    type=click.Path(exists=True, file_okay=False, path_type=Path),
+    default="feeds",
+    help="Directory containing feeds (default: feeds)",
+)
+@click.option(
+    "--output",
+    "-o",
+    type=click.Path(path_type=Path),
+    help="Output path for index.html (default: feeds/index.html)",
+)
+@click.option(
+    "--title",
+    "-t",
+    type=str,
+    help="Site title (overrides site.yaml)",
+)
+@click.option(
+    "--description",
+    type=str,
+    help="Site description (overrides site.yaml)",
+)
+@click.option(
+    "--verbose",
+    "-v",
+    is_flag=True,
+    help="Detailed logging",
+)
+@click.option(
+    "--quiet",
+    "-q",
+    is_flag=True,
+    help="Minimal output",
+)
+def generate_site_command(
+    feeds_dir: Path,
+    output: Optional[Path],
+    title: Optional[str],
+    description: Optional[str],
+    verbose: bool,
+    quiet: bool,
+) -> None:
+    """Generate static site index from feeds directory.
+    
+    Scans the feeds directory for all feed.json files and generates
+    an index.html page listing all discovered feeds. Optionally reads
+    site.yaml from feeds directory for default title/description.
+    
+    Examples:
+        linkfeed generate-site
+        linkfeed generate-site --feeds-dir ./my-feeds
+        linkfeed generate-site --title "My Feeds" --description "Personal collection"
+    """
+    setup_logging(verbose, quiet)
+    logger = logging.getLogger(__name__)
+    
+    # Determine output path
+    if not output:
+        output = feeds_dir / "index.html"
+    
+    logger.info(f"Generating site index from {feeds_dir}")
+    
+    try:
+        generate_index_html(feeds_dir, output, title, description)
+        click.echo(f"Generated site index at {output}")
+    except Exception as e:
+        click.echo(f"Error generating site: {e}", err=True)
+        sys.exit(1)
+
+
+@cli.command(name="run")
 @click.argument("urls", nargs=-1)
 @click.option(
     "--config",
@@ -260,7 +339,7 @@ async def process_urls(
     is_flag=True,
     help="Minimal output",
 )
-def main(
+def run(
     urls: tuple[str, ...],
     config_path: Path,
     markdown_dir: Optional[Path],
@@ -626,4 +705,4 @@ def _run_multi_feed(
 
 
 if __name__ == "__main__":
-    main()
+    cli()

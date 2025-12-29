@@ -17,7 +17,7 @@ dependencies = [
 ]
 
 [project.scripts]
-linkfeed = "linkfeed.cli:main"
+linkfeed = "linkfeed.cli:cli"
 
 [build-system]
 requires = ["hatchling"]

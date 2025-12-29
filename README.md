@@ -14,28 +14,37 @@ uv pip install -e .
 
 ```bash
 # Process URLs directly
-linkfeed https://example.com/article1 https://example.com/article2
+linkfeed run https://example.com/article1 https://example.com/article2
 
 # Rebuild feed from scratch (discard existing items)
-linkfeed --rebuild --config linkfeed.yaml
+linkfeed run --rebuild --config linkfeed.yaml
 
 # Scrape a website for article links
-linkfeed --website https://news.example.com
+linkfeed run --website https://news.example.com
 
 # Extract URLs from markdown files
-linkfeed --from-markdown ./notes/
+linkfeed run --from-markdown ./notes/
 
 # Parse URLs from Trello board export
-linkfeed --from-trello board.json
+linkfeed run --from-trello board.json
 
 # Use a config file
-linkfeed --config linkfeed.yaml
+linkfeed run --config linkfeed.yaml
 
 # Generate with AI-powered tags (requires OPENAI_API_KEY)
-linkfeed --generate-tags https://example.com/article
+linkfeed run --generate-tags https://example.com/article
 
 # Dry run (preview without writing)
-linkfeed --dry-run https://example.com/article
+linkfeed run --dry-run https://example.com/article
+
+# Generate static site index (standalone)
+linkfeed generate-site
+
+# Generate site with custom title/description
+linkfeed generate-site --title "My Feeds" --description "Personal collection"
+
+# Generate site from custom directory
+linkfeed generate-site --feeds-dir ./my-feeds --output ./my-feeds/index.html
 ```
 
 ## Configuration
@@ -167,7 +176,23 @@ feeds:
     website: "https://blog.example.com"
 ```
 
-## CLI Options
+### Site Index Configuration
+
+Optionally create a `site.yaml` file in your feeds directory to customize the index page:
+
+```yaml
+# feeds/site.yaml
+title: "My Feed Collection"
+description: "A curated collection of RSS and JSON feeds"
+```
+
+If not present, defaults to "Feed Index" and generic description.
+
+## Commands
+
+### `linkfeed run`
+
+Generate feeds from URLs and various sources.
 
 | Option | Description |
 |--------|-------------|
@@ -190,6 +215,36 @@ feeds:
 | `-n, --dry-run` | Preview without writing files |
 | `-v, --verbose` | Detailed logging |
 | `-q, --quiet` | Minimal output |
+
+### `linkfeed generate-site`
+
+Generate static site index from feeds directory (no feed generation).
+
+| Option | Description |
+|--------|-------------|
+| `-f, --feeds-dir PATH` | Directory containing feeds (default: feeds) |
+| `-o, --output PATH` | Output path for index.html (default: feeds/index.html) |
+| `-t, --title TEXT` | Site title (overrides site.yaml) |
+| `--description TEXT` | Site description (overrides site.yaml) |
+| `-v, --verbose` | Detailed logging |
+| `-q, --quiet` | Minimal output |
+
+**Use Cases:**
+- Regenerate site index after manual feed edits
+- Update site styling without re-fetching feeds
+- Deploy static site independently
+
+**Examples:**
+```bash
+# Generate with defaults (reads feeds/site.yaml if present)
+linkfeed generate-site
+
+# Override title and description
+linkfeed generate-site --title "Tech Feeds" --description "My tech articles"
+
+# Custom feeds directory
+linkfeed generate-site --feeds-dir ./my-feeds
+```
 
 ## Feed Management
 
