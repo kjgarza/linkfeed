@@ -54,7 +54,7 @@ jobs:
             if [ "${{ inputs.generate_tags }}" = "true" ] && [ -n "$OPENAI_API_KEY" ]; then
               TAGS_FLAG="--generate-tags"
             fi
-            linkfeed --config claude-feed.yaml --multi -g --generate-site $TAGS_FLAG
+            linkfeed run --config claude-feed.yaml --multi --generate-site $TAGS_FLAG
           else
             echo "No claude-feed.yaml found, skipping feed generation"
           fi
