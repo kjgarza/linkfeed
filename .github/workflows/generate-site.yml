@@ -1,0 +1,84 @@
+name: Generate Site
+
+# Fast site index regeneration without fetching feeds
+# Useful for updating site styling, configuration, or manual feed edits
+#
+# Triggers:
+#   - Manual: Via workflow_dispatch with optional title/description override
+#
+# Outputs: Deploys feeds/ directory to GitHub Pages
+
+on:
+  workflow_dispatch:
+    inputs:
+      title:
+        description: 'Site title (optional, uses site.yaml or default)'
+        required: false
+        type: string
+      description:
+        description: 'Site description (optional, uses site.yaml or default)'
+        required: false
+        type: string
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Install dependencies
+        run: |
+          uv venv
+          source .venv/bin/activate
+          uv pip install -e .
+
+      - name: Generate site index
+        run: |
+          source .venv/bin/activate
+          
+          # Build command with optional title/description
+          CMD="linkfeed generate-site --feeds-dir feeds"
+          
+          if [ -n "${{ inputs.title }}" ]; then
+            CMD="$CMD --title '${{ inputs.title }}'"
+          fi
+          
+          if [ -n "${{ inputs.description }}" ]; then
+            CMD="$CMD --description '${{ inputs.description }}'"
+          fi
+          
+          eval $CMD
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: feeds
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
