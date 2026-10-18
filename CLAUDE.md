@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Shared instructions for coding agents. `AGENTS.md` is a symlink to this file, so Codex, Cursor and others read the same content.
 
 ## Project Overview
 
@@ -93,3 +93,9 @@ Tests in `tests/`, fixtures in `tests/fixtures/`. Uses `responses` library to mo
 ## Environment Variables
 
 - `OPENAI_API_KEY` — required only for `--generate-tags` (AI tag generation via gpt-4o-mini)
+
+<!--
+Canonical instruction file. Edit this one; AGENTS.md is a symlink to it.
+Machine-local or personal notes go in CLAUDE.local.md (gitignored).
+Convention: notes/scratchpad/10-Projects/specs/agent-instructions-convention.md
+-->

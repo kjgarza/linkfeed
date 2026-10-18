@@ -42,3 +42,10 @@ feed.json
 .env
 
 docs/
+CLAUDE.local.md
+
+# local
+.knowledge/
+.claude/worktrees/
+.claude/settings.local.json
+.DS_Store
