@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Untitled Feed</title>
+    <link>https://example.com</link>
+    <description>Untitled Feed</description>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <lastBuildDate>Sun, 01 Mar 2026 18:27:21 +0000</lastBuildDate>
+    <item>
+      <title>openclaw-analysis.pdf</title>
+      <link>https://zeroleaks.ai/reports/openclaw-analysis.pdf</link>
+      <guid isPermaLink="false">198ba3b7ee02e979</guid>
+      <category>pdf</category>
+      <enclosure url="https://zeroleaks.ai/reports/openclaw-analysis.pdf" length="159283" type="application/pdf"/>
+    </item>
+    <item>
+      <title>OpenClaw: When AI Agents Get Full System Access – Revolution or Security Nightmare?</title>
+      <link>https://innfactory.ai/en/blog/openclaw-ai-agent-security/</link>
+      <description>OpenClaw: When AI Agents Get Full System Access – Revolution or Security Nightmare? · innFactory AI Consulting - AI Strategy &amp; Consulting</description>
+      <guid isPermaLink="false">18e39e9d37938976</guid>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>A sane but extremely bull case on OpenClaw (Clawdbot) | Brandon Wang</title>
+      <link>https://brandon.wang/2026/clawdbot</link>
+      <description>over the past week the discourse around openclaw (fka clawdbot) has absolutely exploded. it has felt to me like all threads of conversation have veered towards the extreme and indefensible. some are running openclaw with unlimited permissions on their main computers. others are running it in the cloud and blowing through tokens like snow. finally, alarmingly (and very sensationally), people are connecting their openclaws together on a social network so they can plot the demise of their humans to</description>
+      <guid isPermaLink="false">70834225fcff853c</guid>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>OpenClaw is What Apple Intelligence Should Have Been</title>
+      <link>https://www.jakequist.com/thoughts/openclaw-is-what-apple-intelligence-should-have-been</link>
+      <description>Something strange is happening with Mac Minis. They’re selling out everywhere, and it’s not because people suddenly need more coffee table computers.
+If you browse Reddit or HN, you’ll see the same pattern: people are buying Mac Minis specifically to run AI agents with computer use. They’re setting up headless machines whose sole job is to automate their workflows. OpenClaw—the open-source framework that lets you run Claude, GPT-5, or whatever model you want to actually control your computer—has</description>
+      <guid isPermaLink="false">f5bca275a0f58519</guid>
+      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Please stop using OpenClaw, formerly known as Moltbot, formerly known as Clawdbot</title>
+      <link>https://www.xda-developers.com/please-stop-using-openclaw/</link>
+      <description>It could cause you a lot of problems.</description>
+      <guid isPermaLink="false">4392ceb6f652e205</guid>
+      <pubDate>Wed, 04 Feb 2026 11:00:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>OpenClaw Is Changing My Life</title>
+      <link>https://reorx.com/blog/openclaw-is-changing-my-life/</link>
+      <description>I want to share some thoughts on my recent experience with OpenClaw. Over the past year, I’ve been actively using Claude Code for development. Many people believed AI could already assist with programming—seemingly replacing programmers—but I never felt it brought any revolutionary change to the way I work.</description>
+      <guid isPermaLink="false">628be61a32ab1dde</guid>
+      <pubDate>Sun, 08 Feb 2026 10:00:00 +0800</pubDate>
+    </item>
+    <item>
+      <title>Account Restricted Without WARNING– Google AI Ultra / OAuth via OpenClaw</title>
+      <link>https://discuss.ai.google.dev/t/account-restricted-without-warning-google-ai-ultra-oauth-via-openclaw/122778</link>
+      <description>Account Restricted Without WARNING– Google AI Ultra / OAuth via OpenClaw - Google Antigravity - Google AI Developers Forum</description>
+      <guid isPermaLink="false">e12a0b99da79c354</guid>
+      <pubDate>Thu, 12 Feb 2026 22:06:53 +0000</pubDate>
+    </item>
+    <item>
+      <title>Why I Ditched OpenClaw and Built a More Secure AI Agent on Blink + Mac Mini - Blog - Coder</title>
+      <link>https://coder.com/blog/why-i-ditched-openclaw-and-built-a-more-secure-ai-agent-on-blink-mac-mini</link>
+      <description>Self-hosted environments for your developers and the coding agents you choose, on your infrastructure.</description>
+      <guid isPermaLink="false">4a67e634c2839966</guid>
+      <pubDate>Thu, 12 Feb 2026 16:33:49 -0600</pubDate>
+    </item>
+    <item>
+      <title>Tech Things: OpenClaw is dangerous</title>
+      <link>https://12gramsofcarbon.com/p/tech-things-openclaw-is-dangerous</link>
+      <description>We live in a world of miracles and monsters, and it is becoming increasingly difficult to tell which is which.</description>
+      <guid isPermaLink="false">427b550295701b60</guid>
+      <pubDate>Wed, 18 Feb 2026 18:34:15 +0000</pubDate>
+    </item>
+    <item>
+      <title>Sandboxes Won't Save You From OpenClaw</title>
+      <link>https://tachyon.so/blog/sandboxes-wont-save-you</link>
+      <description>AI agent misbehavior isn't a sandbox problem—it's a permissions problem.</description>
+      <guid isPermaLink="false">15d2cdc68ed11b21</guid>
+      <pubDate>Tue, 24 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Don't Run OpenClaw on Your Main Machine</title>
+      <link>https://blog.skypilot.co/openclaw-on-skypilot/</link>
+      <description>OpenClaw gives an AI agent full access to your system. Here's why you should run it on an isolated cloud VM, and how to set that up.</description>
+      <guid isPermaLink="false">54ce5560fd18b77a</guid>
+      <pubDate>Thu, 26 Feb 2026 12:00:00 -0700</pubDate>
+    </item>
+    <item>
+      <title>Introducing OpenClaw</title>
+      <link>https://openclaw.ai/blog/introducing-openclaw</link>
+      <description>The journey from Clawd to Moltbot to OpenClaw—and why this name is here to stay.</description>
+      <guid isPermaLink="false">bf831b46a9cf9785</guid>
+      <pubDate>Sun, 01 Mar 2026 19:27:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHub - HKUDS/nanobot: "🐈 nanobot: The Ultra-Lightweight OpenClaw"</title>
+      <link>https://github.com/HKUDS/nanobot</link>
+      <description>"🐈 nanobot: The Ultra-Lightweight OpenClaw". Contribute to HKUDS/nanobot development by creating an account on GitHub.</description>
+      <guid isPermaLink="false">638846f7379e6538</guid>
+      <pubDate>Sun, 01 Mar 2026 19:27:13 +0000</pubDate>
+    </item>
+    <item>
+      <title>https://cacm.acm.org/blogcacm/openclaw-a-k-a-moltbot-is-everywhere-all-at-once-and-a-disaster-waiting-to-happen/</title>
+      <link>https://cacm.acm.org/blogcacm/openclaw-a-k-a-moltbot-is-everywhere-all-at-once-and-a-disaster-waiting-to-happen/</link>
+      <guid isPermaLink="false">30b5de824a100eb3</guid>
+      <pubDate>Sun, 01 Mar 2026 19:27:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>https://twitter.com/chiefofautism/status/2024483631067021348</title>
+      <link>https://twitter.com/chiefofautism/status/2024483631067021348</link>
+      <guid isPermaLink="false">cc6389b526ee5e43</guid>
+      <pubDate>Sun, 01 Mar 2026 19:27:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>https://twitter.com/BenjaminBadejo/status/2025987544853188836</title>
+      <link>https://twitter.com/BenjaminBadejo/status/2025987544853188836</link>
+      <guid isPermaLink="false">d8e70d6cd027b1e1</guid>
+      <pubDate>Sun, 01 Mar 2026 19:27:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>https://twitter.com/sama/status/2023150230905159801</title>
+      <link>https://twitter.com/sama/status/2023150230905159801</link>
+      <guid isPermaLink="false">79a96aceeac80175</guid>
+      <pubDate>Sun, 01 Mar 2026 19:27:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>https://venturebeat.com/orchestration/nanoclaw-solves-one-of-openclaws-biggest-security-issues-and-its-already</title>
+      <link>https://venturebeat.com/orchestration/nanoclaw-solves-one-of-openclaws-biggest-security-issues-and-its-already</link>
+      <guid isPermaLink="false">59c363f051725a57</guid>
+      <pubDate>Sun, 01 Mar 2026 19:27:21 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

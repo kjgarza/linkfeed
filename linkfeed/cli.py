@@ -13,8 +13,6 @@ from openai import AsyncOpenAI
 from linkfeed.config import (
     load_config,
     load_multi_config,
-    is_multi_config,
-    NamedFeedConfig,
 )
 from linkfeed.feed import (
     generate_rss,
@@ -30,6 +28,9 @@ from linkfeed.utils.whitelist import filter_whitelisted
 from linkfeed.utils.markdown import scan_markdown_directory
 from linkfeed.utils.network import create_session, fetch_url
 from linkfeed.utils.scraper import scrape_website_links
+from linkfeed.sources.hackernews import HackerNewsSource
+from linkfeed.sources.qurl import QurlSource
+from linkfeed.sources.stackexchange import StackExchangeSource
 from linkfeed.utils.tagging import generate_tags, create_openai_client, DEFAULT_MODEL
 from linkfeed.utils.trello import parse_trello_board
 from linkfeed.utils.url import URLDeduplicator, is_valid_url
@@ -248,6 +249,20 @@ def generate_site_command(
     help="Scrape website for article links",
 )
 @click.option(
+    "--from-hackernews",
+    "-H",
+    "hackernews_query",
+    type=str,
+    help='Search HackerNews via Algolia (e.g. "python async")',
+)
+@click.option(
+    "--from-stackexchange",
+    "-E",
+    "stackexchange_spec",
+    type=str,
+    help='Fetch StackExchange questions (e.g. "stackoverflow:python,asyncio")',
+)
+@click.option(
     "--json-out",
     "-j",
     type=click.Path(path_type=Path),
@@ -346,6 +361,8 @@ def run(
     trello_file: Optional[Path],
     trello_lists: tuple[str, ...],
     website_url: Optional[str],
+    hackernews_query: Optional[str],
+    stackexchange_spec: Optional[str],
     json_out: Path,
     rss_out: Path,
     output_dir: Optional[Path],
@@ -445,6 +462,50 @@ def run(
         scraped_urls = asyncio.run(_scrape_website(config.website))
         logger.info(f"Found {len(scraped_urls)} links from website")
         all_urls.extend(scraped_urls)
+
+    # From HackerNews (CLI)
+    if hackernews_query:
+        logger.info(f"Fetching HackerNews stories for: {hackernews_query}")
+        hn_urls = asyncio.run(_fetch_hackernews_urls(hackernews_query))
+        logger.info(f"Found {len(hn_urls)} HackerNews URLs")
+        all_urls.extend(hn_urls)
+
+    # From config hackernews setting
+    if config.hackernews:
+        logger.info(f"Fetching HackerNews from config: {config.hackernews.query}")
+        hn_urls = asyncio.run(_fetch_hackernews_urls(config.hackernews.query, config.hackernews.limit))
+        logger.info(f"Found {len(hn_urls)} HackerNews URLs")
+        all_urls.extend(hn_urls)
+
+    # From StackExchange (CLI)
+    if stackexchange_spec:
+        # Parse "site:tag1,tag2" format
+        if ":" in stackexchange_spec:
+            se_site, se_tagged = stackexchange_spec.split(":", 1)
+        else:
+            se_site, se_tagged = stackexchange_spec, ""
+        logger.info(f"Fetching StackExchange from {se_site}: {se_tagged}")
+        se_urls = asyncio.run(_fetch_stackexchange_urls(se_site, se_tagged))
+        logger.info(f"Found {len(se_urls)} StackExchange URLs")
+        all_urls.extend(se_urls)
+
+    # From config qurl setting
+    if config.qurl:
+        logger.info(f"Reading qurl from config: source={config.qurl.source or 'all'}")
+        qurl_urls = _fetch_qurl_urls(config.qurl.db, config.qurl.source, config.qurl.limit)
+        logger.info(f"Found {len(qurl_urls)} qurl URLs")
+        all_urls.extend(qurl_urls)
+
+    # From config stackexchange setting
+    if config.stackexchange:
+        logger.info(f"Fetching StackExchange from config: {config.stackexchange.site}")
+        se_urls = asyncio.run(_fetch_stackexchange_urls(
+            config.stackexchange.site,
+            config.stackexchange.tagged,
+            config.stackexchange.limit,
+        ))
+        logger.info(f"Found {len(se_urls)} StackExchange URLs")
+        all_urls.extend(se_urls)
 
     if not all_urls:
         click.echo("No URLs to process", err=True)
@@ -558,6 +619,25 @@ async def _scrape_website(url: str) -> list[str]:
         return await scrape_website_links(url, session)
 
 
+async def _fetch_hackernews_urls(query: str, limit: int = 20) -> list[str]:
+    """Fetch URLs from HackerNews via Algolia."""
+    async with create_session() as session:
+        source = HackerNewsSource(query=query, limit=limit, session=session)
+        return await source.fetch_urls()
+
+
+def _fetch_qurl_urls(db: Optional[str], source: Optional[str], limit: Optional[int]) -> list[str]:
+    """Read URLs from a local qurl store."""
+    return asyncio.run(QurlSource(db=db, source=source, limit=limit).fetch_urls())
+
+
+async def _fetch_stackexchange_urls(site: str, tagged: str, limit: int = 15) -> list[str]:
+    """Fetch URLs from StackExchange."""
+    async with create_session() as session:
+        source = StackExchangeSource(site=site, tagged=tagged, limit=limit, session=session)
+        return await source.fetch_urls()
+
+
 def _run_multi_feed(
     config_path: Path,
     output_dir: Path,
@@ -621,6 +701,32 @@ def _run_multi_feed(
             scraped = asyncio.run(_scrape_website(feed_config.website))
             logger.info(f"  Found {len(scraped)} links")
             all_urls.extend(scraped)
+
+        # From HackerNews if configured
+        if feed_config.hackernews:
+            logger.info(f"  Fetching HackerNews: {feed_config.hackernews.query}")
+            hn_urls = asyncio.run(_fetch_hackernews_urls(feed_config.hackernews.query, feed_config.hackernews.limit))
+            logger.info(f"  Found {len(hn_urls)} HackerNews URLs")
+            all_urls.extend(hn_urls)
+
+        # From qurl store if configured
+        if feed_config.qurl:
+            q = feed_config.qurl
+            logger.info(f"  Reading qurl: source={q.source or 'all'}")
+            qurl_urls = _fetch_qurl_urls(q.db, q.source, q.limit)
+            logger.info(f"  Found {len(qurl_urls)} qurl URLs")
+            all_urls.extend(qurl_urls)
+
+        # From StackExchange if configured
+        if feed_config.stackexchange:
+            logger.info(f"  Fetching StackExchange: {feed_config.stackexchange.site}")
+            se_urls = asyncio.run(_fetch_stackexchange_urls(
+                feed_config.stackexchange.site,
+                feed_config.stackexchange.tagged,
+                feed_config.stackexchange.limit,
+            ))
+            logger.info(f"  Found {len(se_urls)} StackExchange URLs")
+            all_urls.extend(se_urls)
 
         if not all_urls:
             logger.warning(f"  No URLs for feed {feed_config.name}")

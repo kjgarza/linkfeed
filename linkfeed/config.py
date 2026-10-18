@@ -1,7 +1,7 @@
 """Configuration loading and validation."""
 
 from pathlib import Path
-from typing import Optional, Union
+from typing import Optional
 import yaml
 from pydantic import BaseModel, Field
 
@@ -23,6 +23,30 @@ class TrelloSource(BaseModel):
     lists: list[str] = Field(default_factory=list)  # Filter by list IDs
 
 
+class HackerNewsConfig(BaseModel):
+    """HackerNews source configuration."""
+
+    query: str
+    limit: int = 20
+
+
+class StackExchangeConfig(BaseModel):
+    """StackExchange source configuration."""
+
+    site: str = "stackoverflow"
+    tagged: str = ""
+    limit: int = 15
+    sort: str = "activity"
+
+
+class QurlConfig(BaseModel):
+    """qurl store source configuration."""
+
+    db: Optional[str] = None  # Defaults to $QURL_DB_PATH or ~/.cache/qurl/qurl.sqlite
+    source: Optional[str] = None  # qurl source name to filter by; None = all
+    limit: Optional[int] = None
+
+
 class SingleFeedConfig(BaseModel):
     """Configuration for a single feed (legacy format)."""
 
@@ -33,6 +57,9 @@ class SingleFeedConfig(BaseModel):
     website: Optional[str] = None  # URL to scrape for links
     markdown_dir: Optional[str] = None  # Directory to scan for markdown files
     trello: Optional[TrelloSource] = None  # Trello board source
+    hackernews: Optional[HackerNewsConfig] = None
+    stackexchange: Optional[StackExchangeConfig] = None
+    qurl: Optional[QurlConfig] = None
 
 
 class NamedFeedConfig(BaseModel):
@@ -46,6 +73,9 @@ class NamedFeedConfig(BaseModel):
     website: Optional[str] = None
     markdown_dir: Optional[str] = None
     trello: Optional[TrelloSource] = None
+    hackernews: Optional[HackerNewsConfig] = None
+    stackexchange: Optional[StackExchangeConfig] = None
+    qurl: Optional[QurlConfig] = None
     output_dir: Optional[str] = None  # Custom output directory
 
 
@@ -85,6 +115,26 @@ def load_config(path: Path) -> SingleFeedConfig:
             lists=trello_data.get("lists", []),
         )
 
+    # Parse hackernews config
+    hackernews = None
+    hn_data = data.get("hackernews")
+    if hn_data:
+        hackernews = HackerNewsConfig(
+            query=hn_data.get("query", ""),
+            limit=hn_data.get("limit", 20),
+        )
+
+    # Parse stackexchange config
+    stackexchange = None
+    se_data = data.get("stackexchange")
+    if se_data:
+        stackexchange = StackExchangeConfig(
+            site=se_data.get("site", "stackoverflow"),
+            tagged=se_data.get("tagged", ""),
+            limit=se_data.get("limit", 15),
+            sort=se_data.get("sort", "activity"),
+        )
+
     return SingleFeedConfig(
         feed=feed_config,
         sources=data.get("sources", []),
@@ -93,6 +143,9 @@ def load_config(path: Path) -> SingleFeedConfig:
         website=data.get("website"),
         markdown_dir=data.get("markdown_dir"),
         trello=trello,
+        hackernews=hackernews,
+        stackexchange=stackexchange,
+        qurl=QurlConfig(**data["qurl"]) if data.get("qurl") else None,
     )
 
 
@@ -124,6 +177,26 @@ def load_multi_config(path: Path) -> MultiConfig:
                 lists=trello_data.get("lists", []),
             )
 
+        # Parse hackernews config
+        hackernews = None
+        hn_data = feed_data.get("hackernews")
+        if hn_data:
+            hackernews = HackerNewsConfig(
+                query=hn_data.get("query", ""),
+                limit=hn_data.get("limit", 20),
+            )
+
+        # Parse stackexchange config
+        stackexchange = None
+        se_data = feed_data.get("stackexchange")
+        if se_data:
+            stackexchange = StackExchangeConfig(
+                site=se_data.get("site", "stackoverflow"),
+                tagged=se_data.get("tagged", ""),
+                limit=se_data.get("limit", 15),
+                sort=se_data.get("sort", "activity"),
+            )
+
         feeds.append(NamedFeedConfig(
             name=feed_data.get("name", "unnamed"),
             feed=FeedConfig(**feed_meta),
@@ -133,6 +206,9 @@ def load_multi_config(path: Path) -> MultiConfig:
             website=feed_data.get("website"),
             markdown_dir=feed_data.get("markdown_dir"),
             trello=trello,
+            hackernews=hackernews,
+            stackexchange=stackexchange,
+            qurl=QurlConfig(**feed_data["qurl"]) if feed_data.get("qurl") else None,
             output_dir=feed_data.get("output_dir"),
         ))
 

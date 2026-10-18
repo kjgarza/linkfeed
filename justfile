@@ -12,10 +12,11 @@ install:
     uv venv
     uv pip install -e .
 
-# Install with dev dependencies (pytest, coverage, etc.)
+# Install with dev dependencies (pytest, coverage, aioresponses, etc.)
 install-dev:
     uv venv
     uv pip install -e '.[dev]'
+    uv pip install aioresponses responses
 
 # ── Run ──────────────────────────────────────────────────────────────────────
 
@@ -43,11 +44,31 @@ rebuild config="feed-config.yaml":
 generate-site feeds-dir="feeds":
     uv run linkfeed generate-site --feeds-dir {{feeds-dir}}
 
+# Fetch URLs from HackerNews and add to feed (query required)
+from-hackernews query output-dir="feeds/hn":
+    uv run linkfeed run --from-hackernews "{{query}}" --output-dir {{output-dir}}
+
+# Fetch URLs from StackExchange and add to feed (spec: "site:tag1,tag2")
+from-stackexchange spec output-dir="feeds/se":
+    uv run linkfeed run --from-stackexchange "{{spec}}" --output-dir {{output-dir}}
+
 # ── Test ─────────────────────────────────────────────────────────────────────
 
 # Run all tests
 test:
     uv run pytest tests/
+
+# Run tests for network fallback fetching
+test-network:
+    uv run pytest tests/test_network.py -v
+
+# Run tests for HN/SE source types
+test-sources:
+    uv run pytest tests/test_sources.py -v
+
+# Run tests for HN/SE config loading
+test-config-sources:
+    uv run pytest tests/test_config_sources.py -v
 
 # Run a single test file
 test-file file:
