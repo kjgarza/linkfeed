@@ -810,5 +810,9 @@ def _run_multi_feed(
         click.echo(f"Generated site index at {index_path}")
 
 
+# Direct entry point to the `run` command, used by tests/test_rebuild.py.
+main = run
+
+
 if __name__ == "__main__":
     cli()

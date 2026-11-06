@@ -96,7 +96,7 @@ class TestExtractBestParagraph:
         plain_text = [
             {"text": "Dict format paragraph."},
             "String format paragraph with enough content to be considered as a valid candidate for the summary selection.",
-            {"text": "This is the longest paragraph in dict format with the most comprehensive information and should be selected."},
+            {"text": "This is the longest paragraph in dict format, with the most comprehensive information of the three, and so it should be the one selected."},
         ]
         
         result = self.parser._extract_best_paragraph(plain_text)

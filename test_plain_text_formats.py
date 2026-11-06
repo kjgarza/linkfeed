@@ -35,7 +35,7 @@ async def test_plain_text_handling():
     print(f"plain_text[0] type: {type(article.get('plain_text')[0])}")
     print(f"plain_text structure: {article.get('plain_text')[:3]}")
     
-    item = parser._build_item_from_readability(
+    item = await parser._build_item_from_readability(
         url="https://example.com/test",
         article=article,
         html_str=html_with_date,
@@ -66,7 +66,7 @@ async def test_plain_text_handling():
     }
     
     # This should also work with our isinstance checks
-    item2 = parser._build_item_from_readability(
+    item2 = await parser._build_item_from_readability(
         url="https://example.com/test2",
         article=article_str_format,
         html_str=html_with_date,

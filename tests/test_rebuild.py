@@ -1,6 +1,7 @@
 """Tests for rebuild functionality."""
 
 import json
+import logging
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
@@ -12,8 +13,10 @@ from linkfeed.models import Feed, FeedItem
 
 
 @pytest.fixture
-def temp_feed_dir(tmp_path):
+def temp_feed_dir(tmp_path, monkeypatch):
     """Create a temporary directory with an existing feed."""
+    # The CLI writes its default ./feed.xml to the cwd; keep it out of the repo.
+    monkeypatch.chdir(tmp_path)
     feed_dir = tmp_path / "feeds"
     feed_dir.mkdir()
     
@@ -179,6 +182,7 @@ sources:
 
     def test_rebuild_logs_correctly(self, temp_feed_dir, caplog):
         """Test that rebuild mode logs appropriate messages."""
+        caplog.set_level(logging.INFO)
         runner = CliRunner()
         
         config_path = temp_feed_dir / "config.yaml"
@@ -206,5 +210,6 @@ sources:
                 "--rebuild",
                 "-v",  # Verbose to see log messages
             ])
-        
-        assert "Rebuilding feed from scratch" in result.output
+
+        assert result.exit_code == 0
+        assert "Rebuilding feed from scratch" in caplog.text
